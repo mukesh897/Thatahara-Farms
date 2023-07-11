@@ -484,7 +484,7 @@
                 <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
                 <textarea id="message" v-model="message" required class="w-full rounded-lg border"></textarea>
               </div>
-              <div class="w-full mt-5 flex justify-center">
+              <div class="w-full mt-5 flex justify-start">
                 <BaseButton
                 type="submit"
                 class="max-w-full px-8 py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white font-bold"
