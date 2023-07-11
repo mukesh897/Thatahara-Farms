@@ -5,3 +5,9 @@
     </div>
   </div>
 </template>
+
+<script>
+
+<div class=" max-w-md mx-auto">
+       
+          </div>

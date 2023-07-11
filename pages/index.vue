@@ -429,7 +429,7 @@
     </section>
 
     <!-- Getting started section -->
-    <section id="contact" class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
+    <section id="contact" class="relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
       <!-- <div class="w-full py-16 flex items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
           Request a 
@@ -467,20 +467,22 @@
         </div>
       </div> -->
 
-      <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+      <section class="relative max-w-full overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <form @submit="sendEmail" class="w-full">
+        
+        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
+          <form @submit="sendEmail" class="w-full">
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
-                <input id="email" type="email" v-model="email" required class="w-full rounded-lg">
+                <input id="email" type="email" v-model="email" required class="w-full rounded-lg border">
               </div>
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
-                <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg">
+                <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg border">
               </div>
               <div>
                 <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
-                <textarea id="message" v-model="message" required class="w-full rounded-lg"></textarea>
+                <textarea id="message" v-model="message" required class="w-full rounded-lg border"></textarea>
               </div>
               <div class="w-full mt-5 flex justify-center">
                 <BaseButton
@@ -491,10 +493,8 @@
             </BaseButton>
               </div>
           </form>
-        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
-           
         </div>
-        <div data-aos="fade-left" class="col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-left" class="col-span-12 font-poppins flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
           <h2 class="text-6xl font-bold">Request a  <span class="sm:hidden lg:block font-poppins text-8xl theme"> Callback</span> </h2>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
