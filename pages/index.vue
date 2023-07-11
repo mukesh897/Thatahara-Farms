@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-        <div class="bg-trading-tools h-screen relative mt-[-60px] z-20 max-w-full shadow col-span-12 overflow-hidden">
+        <div class="bg-trading-tools lg:h-screen relative mt-[-60px] z-20 max-w-full shadow col-span-12 overflow-hidden">
           <b-carousel
             class="h-screen"
             id="carousel-1"
@@ -30,7 +30,7 @@
                 >
               </template>
             <div class="carousel-caption">
-              <h1 style="font-size: 80px;" class="font-bold">Hampshire Estates</h1>
+              <h1 style="" class="font-bold carousel-text">Hampshire Estates</h1>
               <p class="mt-4 font-bold"> A green living project</p>
             </div>
             
@@ -41,7 +41,7 @@
             >
             <template #img>
               <img
-                  class="d-block img-fluid w-100"
+                  class="d-block img-fluid w-100  "
                   width="1024"
                   height="480"
                   src="~/assets/img/C2.png"
@@ -50,7 +50,7 @@
                 >
             </template>
             <div class="">
-              <h1 style="font-size: 80px;" class="font-bold">Introducing LaTerra</h1>
+              <h1 style="" class="font-bold carousel-text">Introducing LaTerra</h1>
               <p class="mt-4 font-bold">Your own countryside manor</p>
             </div>
             </b-carousel-slide>
@@ -60,7 +60,7 @@
             >
             <template #img>
               <img
-                  class="d-block img-fluid w-100"
+                  class="d-block img-fluid w-100 "
                   width="1024"
                   height="480"
                   src="~/assets/img/C3.png"
@@ -115,7 +115,7 @@
 
     <!-- Crypto statistic section -->
     <!-- <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+      class="max-w-screen-xl mx-2 sm:mx-auto lg:px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
     >
       <div class="w-full flex flex-col lg:flex-row items-center justify-center">
         <LandingCryptoStatistic
@@ -162,15 +162,15 @@
     <section class="relative max-w-full sm:mx-4 mt-10 pt-8 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
-          <div class="w-full mt-20">
+          <div class="w-full lg:mt-20">
             <img :src="require('~/assets/img/LaT.jpg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 space-y-6 px-4 sm:px-6 -mt-10">
-          <h2 class="text-4xl font-bold mt-20 font-black">
-            <span class="font-poppins font-bold">Introducing <span class="theme text-8xl whitespace-nowrap">La Terra</span></span>
+        <div class="col-span-12 lg:col-span-6 space-y-6 lg:px-4 sm:px-6 lg:-mt-10">
+          <h2 class="lg:text-6xl text-2xl font-bold mt-10 lg:mt-20 font-black">
+            <span class="font-poppins font-bold">Introducing <span class="theme lg:text-8xl text-6xl whitespace-nowrap">La Terra</span></span>
           </h2>
-          <p class="font-semibold text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
+          <p class="font-semibold lg:text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
           <!-- <ul class="space-y-4 sm:space-y-2">
             <LandingListItem title="Up to 3% back on purchases" />
             <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
@@ -186,17 +186,17 @@
 
     <section class="w-full">
       <BaseSection>
-        <!-- <LandingBuyTradeImage class="sm:hidden mb-8" /> -->
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-8xl font-bold mt-20 font-black">
-            <span class="font-poppins font-bold">Your own <span class="theme text-8xl whitespace-nowrap">Countryside Manor</span></span>
+        <LandingBuyTradeImage class="lg:hidden mb-4 mt-10" />
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 lg:px-4">
+          <h2 class="lg:text-8xl text-2xl font-bold lg:mt-20 font-black">
+            <span class="font-poppins font-bold">Your own <span class="theme lg:text-8xl text-4xl  whitespace-nowrap">Countryside Manor</span></span>
           </h2>
           <div class="flex">
-            <p class="w-full mt-4 font-semibold text-xl font-poppins tracking-normal leading-normal">
+            <p class="w-full mt-4 font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
               We are absolutely thrilled to offer you the option of building a farm house on the plot. If you desire a tranquil countryside retreat, our skilled team is ready to create a custom-designed farm house that harmonizes with the natural surroundings. From spacious interiors to functional barns and expansive outdoor spaces, we'll work closely with you to bring your ideal farm house to fruition. Your vision, combined with our expertise, will result in a picturesque farm house where you can enjoy the serenity of rural living.
 
             </p>
-            <LandingBuyTradeImage class="w-full ml-5 h-50" />
+            <LandingBuyTradeImage class="w-full ml-5 h-50 hidden lg:block" />
           </div>
          
           <!-- <BaseButton
@@ -228,19 +228,19 @@
       </BaseSection>
     </section>
 
-    <section class="relative max-w-full sm:mx-4 mt-10 pt-8 rounded-2xl overflow-hidden">
+    <section class="relative max-w-full sm:mx-4 mt-10 lg:pt-8 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
-          <div class="w-full mt-20">
+          <div class="w-full lg:mt-20 mt-10">
             <img :src="require('~/assets/img/getaway.png')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 space-y-6 px-4 sm:px-6 -mt-10">
-          <p class="text-3xl font-bold mt-20 font-black leading-normal">
+        <div class="col-span-12 lg:col-span-6 lg:space-y-6 lg:px-4 sm:px-6 -mt-10">
+          <p class="lg:4xl text-3xl font-bold lg:mt-20 mt-10 font-black leading-normal">
             A Perfect 
           </p>
-          <p class="theme text-6xl font-bold whitespace-nowrap">Weekend Getaway</p>
-          <p class=" font-semibold text-xl font-poppins tracking-normal leading-normal">
+          <p class="theme lg:text-6xl text-4xl font-bold whitespace-nowrap">Weekend Getaway</p>
+          <p class=" font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
             Situated at a drive of
             70 minutes from the ever busy Bangalore International airport, 'la terra' by Hampshire Estates never fails to grab your attention for a weekend getaway with your family. This farmland can truly be your personal heaven on Earth! 
           </p>
@@ -260,12 +260,12 @@
     <section class="w-full">
       <BaseSection>
         <!-- <LandingBuyTradeImage class="sm:hidden mb-8" /> -->
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-6xl font-bold mt-20 font-black">
-            <span class="font-poppins font-bold">Why <span class="theme text-8xl whitespace-nowrap">Compromise?</span></span>
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 lg:px-4">
+          <h2 class="lg:text-6xl text-3xl font-bold mt-10 lg:mt-20 font-black">
+            <span class="font-poppins font-bold">Why <span class="theme lg:text-8xl text-4xl whitespace-nowrap">Compromise?</span></span>
           </h2>
           <div class="flex">
-            <p class="font-semibold max-w-3/4 w-3/4 text-xl font-poppins tracking-normal leading-normal">
+            <p class="font-semibold lg:max-w-3/4 lg:w-3/4 lg:text-xl font-poppins tracking-normal leading-normal">
              Why settle for a typical party venue when you can host a truly remarkable gathering at a farm? Embrace the natural beauty, wide-open spaces, and unique experiences that only a farm can provide. It's time to plan an unforgettable farm party that will leave a lasting impression on your guests!
               Prepare for an adrenaline-pumping excitement as FIA 
               Grade 2 racing track is coming up in Penakonda, which is about 15 minutes from your personal Paradise 'la terra!' 
@@ -309,9 +309,11 @@
       </BaseSection>
     </section>
 
-    <section class="relative max-w-full sm:mx-4 my-20 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        
+    <section class="relative max-w-full my-20 mx-4 lg:mx-0 shadow rounded-2xl overflow-hidden">
+      <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+        <div data-aos="fade-left" class="lg:hidden col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
+          <h2 class="text-4xl font-bold">What's <span class="sm:hidden lg:block font-poppins text-6xl theme"> Near?</span> </h2>
+        </div>
         <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
             <div class="flex p-8">
               <img :src="require('~/assets/img/shiva.png')" class="w-16 h-16 object-contain self-center" alt="" />
@@ -330,7 +332,7 @@
               <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Hindupur Railway Station</p>
             </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-left" class="col-span-12 hidden  lg:flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
           <h2 class="text-6xl font-bold">What's <span class="sm:hidden lg:block font-poppins text-8xl theme"> Near?</span> </h2>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
@@ -338,10 +340,10 @@
     </section>
 
     <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 flex justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6">
-          <h2 class="lg:text-8xl text-4xl font-bold text-white">What <br class="sm:hidden lg:block"> we offer </h2>
+    <section class="bg-trading-tools relative max-w-full mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+      <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+        <div data-aos="fade-right" class="col-span-12 flex justify-center text-left lg:items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6">
+          <h2 class="lg:text-8xl text-5xl font-bold text-white">What <br class="sm:hidden lg:block"> we offer </h2>
         </div>
         <div class="col-span-12 bg-white items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
             <div v-if="active ==1 " class="w-full slide" :class="{ fade: transitioning }">
@@ -461,7 +463,7 @@
         </h2>
         <div
           data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
+          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 lg:px-4 xl:px-10 mt-16 sm:mt-8"
         >
           <div class=" max-w-md mx-auto">
             <form @submit="sendEmail" class="w-full">
@@ -492,37 +494,37 @@
       </div> -->
 
       <section class="relative max-w-full overflow-hidden">
-      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+      <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         
         <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
-          <form @submit="sendEmail" class="w-full">
+          <form ref="form" class="w-full">
             <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Full Name:</label>
-                <input id="name" type="name" v-model="name" required class="px-4 w-full capitalize rounded-lg border">
+                <input id="name" type="name" required class="lg:px-4 py-2 w-full capitalize rounded-lg border">
               </div>
-              <div>
+              <div class="mt-3">
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
-                <input id="email" type="email" v-model="email" required class="px-4 w-full rounded-lg border">
+                <input id="email" type="email" required class="lg:px-4 py-2 w-full rounded-lg border">
               </div>
-              <div>
+              <div class="mt-3">
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
-                <input id="phoneNumber" type="number" v-model="phoneNumber" required class="px-4 w-full rounded-lg border">
+                <input id="phoneNumber" type="number" required class="lg:px-4 py-2 w-full rounded-lg border">
               </div>
-              <div>
+              <div class="mt-3">
                 <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
-                <textarea id="message" v-model="message" required class="px-4 w-full rounded-lg border"></textarea>
+                <textarea id="message" required class="lg:px-4 py-2 w-full rounded-lg border"></textarea>
               </div>
-              <div class="w-full mt-5 flex justify-start">
-                <BaseButton
+              <div @click="sendEmail()" class="w-full mt-5 flex justify-start">
+                <button
                 type="submit"
-                class="max-w-full px-8 py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white font-bold"
+                class="max-w-full rounded-[7px] px-8 py-2 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white font-bold"
               >
                 Send
-            </BaseButton>
+              </button>
               </div>
           </form>
         </div>
-        <div data-aos="fade-left" class="col-span-12 font-poppins flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-left" class="col-span-12 font-poppins flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
           <h2 class="text-6xl font-bold">Request a  <span class="sm:hidden lg:block font-poppins text-8xl theme"> Callback</span> </h2>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
@@ -538,7 +540,7 @@
             <img :src="require('~/assets/img/WhyChooseUs.png')" class="w-3/4 h-3/4" alt="" />
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 lg:px-4 sm:px-6 mt-8">
           <span class="text-base text-[#5D794F] font-bold uppercase mb-4 sm:mb-2">Support</span>
           <h2 class="text-4xl theme sm:text-4xl font-bold mb-10 sm:mb-6">Frequently asked questions</h2>
 
@@ -796,14 +798,17 @@ export default {
     },
     sendEmail() {
       // Send email logic here
+
+      event.preventDefault();
       const emailData = {
         name: this.name,
         email: this.email,
         phoneNumber: this.phoneNumber,
         message: this.message,
       };
-
-      emailjs.sendForm('service_1o90b3i', 'template_re2toum', emailData, 'CAXeNuLKdK4qtQmdn')
+      // console.log(this.$refs)
+      // console.log(this.$refs.form);
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
         .then(() => {
           alert('Message sent!')
           // inputFieldReset.value = " ";
@@ -816,8 +821,8 @@ export default {
       console.log(emailData);
 
       // Reset form fields
-      this.email = '';
-      this.message = '';
+      // this.email = '';
+      // this.message = '';
     }
   }
 }
@@ -842,20 +847,43 @@ export default {
   color: #5D794F;
   
 }
-.carousel-inner {
-  height:100vh;
-}
-.carousel-caption {
+
+@media only screen and (min-width: 760px) {
+  .carousel-inner {
+    height:100vh;
+  }
+  .img-fluid {
+    height:100vh !important;
+  }
+  .carousel-caption {
     bottom: 160px !important;
+  }
+  .carousel-text {
+    font-size: 80px;
+  }
 }
+
+@media only screen and (max-width: 760px) {
+  .carousel-inner {
+    height:50vh;
+  }
+  .img-fluid {
+    height:50vh !important;
+  }
+  .carousel-text {
+    font-size: 48px;
+  }
+  .carousel {
+    height:50vh !important;
+  }
+}
+
 .bg-partner {
   background: url('../assets/img/partner/background.png');
   background-size: cover;
   background-position: center;
 }
-.img-fluid {
-  height:100vh !important;
-}
+
 .bg-trading-tools {
   background-color: #5D794F;
   background-size: cover;

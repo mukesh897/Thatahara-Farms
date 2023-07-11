@@ -1,10 +1,10 @@
 <template>
   <footer class="max-w-screen-xl px-8 mx-auto">
     <div class="w-full border-y border-[#DDDDDD]">
-      <h2 class="text-8xl font-bold mt-20 font-black">
+      <h2 class="lg:text-8xl text-4xl font-bold mt-20 font-black">
         <span class="font-poppins font-bold">About <span class="text-[#5D794F] text-8xl whitespace-nowrap">Us</span></span>
       </h2>
-      <div class="w-3/4 mt-4 font-normal font-poppins tracking-normal leading-normal">
+      <div class="lg:w-3/4 mt-4 font-normal font-poppins tracking-normal leading-normal">
         At Hampshire Estates we are passionate about transforming lives through real estate. Our dedicated team is committed to ensure your satisfaction by tailor making your own unique property that lets you stand out from the crowd. 
 
         <p class="mt-2">With ample experience in the field, we have built a strong foundation of expertise and excellence in real estate.</p>

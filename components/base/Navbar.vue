@@ -2,7 +2,7 @@
   <nav id="navbar" class="relative z-50 w-full text-neutral-800 max-h-[86px] bg-transparent">
     <div class="flex theme flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-2">
-        <div class="w-full flex flex-row items-center justify-between">
+        <div class="w-full flex flex-row items-center pt-4 justify-between">
           <div class=" z-50">
             <img :src="require('~/assets/img/logo.jpeg')" class="w-10 h-10 xl:w-28 rounded-full" alt="Nefa Logo" />
           </div>
