@@ -276,7 +276,14 @@
           <BaseButton
               class="max-w-full px-8 font-medium py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white"
             >
+            <a
+              v-smooth-scroll
+              data-aos="flip-down"
+              data-aos-delay="150"
+              href="#contact"
+            >
               Schedule a Visit
+            </a> 
           </BaseButton>
           <!-- <div class="space-y-6 lg:pr-12">
             <LandingExchange
@@ -302,7 +309,7 @@
       </BaseSection>
     </section>
 
-    <section class="relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+    <section class="relative max-w-full sm:mx-4 my-20 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         
         <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
@@ -333,7 +340,7 @@
     <!-- Advanced trading tools section -->
     <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 flex justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+        <div data-aos="fade-right" class="col-span-12 flex justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6">
           <h2 class="lg:text-8xl text-4xl font-bold text-white">What <br class="sm:hidden lg:block"> we offer </h2>
         </div>
         <div class="col-span-12 bg-white items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
@@ -393,8 +400,8 @@
                 <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal"></p>
               </div>
             </div>
-            <img @click="changeActive('right')" class="absolute top-[25%] right-[5%] w-5 h-5" src="~/assets/img/double-arrow-right-icon.svg"/>
-            <img @click="changeActive('left')" class="absolute top-[25%] w-5 h-5 left-[5%]" src="~/assets/img/double-arrow-left-icon.svg"/>
+            <!-- <img @click="changeActive('right')" class="absolute top-[25%] right-[5%] w-5 h-5" src="~/assets/img/double-arrow-right-icon.svg"/>
+            <img @click="changeActive('left')" class="absolute top-[25%] w-5 h-5 left-[5%]" src="~/assets/img/double-arrow-left-icon.svg"/> -->
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
       </div>
@@ -489,13 +496,17 @@
         
         <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
           <form @submit="sendEmail" class="w-full">
+            <div>
+                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Full Name:</label>
+                <input id="name" type="name" v-model="name" required class="px-4 w-full capitalize rounded-lg border">
+              </div>
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
                 <input id="email" type="email" v-model="email" required class="px-4 w-full rounded-lg border">
               </div>
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
-                <input id="Contact" type="number" v-model="email" required class="px-4 w-full rounded-lg border">
+                <input id="phoneNumber" type="number" v-model="phoneNumber" required class="px-4 w-full rounded-lg border">
               </div>
               <div>
                 <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
@@ -555,6 +566,7 @@
 
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
+import emailjs from 'emailjs-com';
   import 'vue-slick-carousel/dist/vue-slick-carousel.css'
   // optional style for arrows & dots
   import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
@@ -572,6 +584,8 @@ export default {
       sliding: null,
       email: '',
       message: '',
+      phoneNumber: '',
+      name: '',
       dropdownConcurency: false,
       dropdownCrypto: false,
       currencySelected: {
@@ -783,9 +797,19 @@ export default {
     sendEmail() {
       // Send email logic here
       const emailData = {
+        name: this.name,
         email: this.email,
-        message: this.message
+        phoneNumber: this.phoneNumber,
+        message: this.message,
       };
+
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', emailData, 'CAXeNuLKdK4qtQmdn')
+        .then(() => {
+          alert('Message sent!')
+          // inputFieldReset.value = " ";
+        }, (error) => {
+          alert('Message not sent', error);
+        }); 
 
       // You can use an HTTP library like Axios to send the data to the server
       // Here, we are logging the email data to the console for demonstration purposes
