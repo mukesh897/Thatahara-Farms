@@ -88,7 +88,7 @@
                 >
               </template>
               <div class="">
-              <h1 style="font-size: 48px;" class="font-bold">Not an average gathering</h1>
+              <h1 style="font-size: 48px;" class="font-bold"></h1>
               <p class="mt-4 font-bold"></p>
             </div>
             </b-carousel-slide>
@@ -163,14 +163,14 @@
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
           <div class="w-full mt-20">
-            <img :src="require('~/assets/img/Laterra.jpeg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/LaT.jpg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
         <div class="col-span-12 lg:col-span-6 space-y-6 px-4 sm:px-6 -mt-10">
           <h2 class="text-4xl font-bold mt-20 font-black">
             <span class="font-poppins font-bold">Introducing <span class="theme text-8xl whitespace-nowrap">La Terra</span></span>
           </h2>
-          <p class=" font-semibold text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
+          <p class="font-semibold text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
           <!-- <ul class="space-y-4 sm:space-y-2">
             <LandingListItem title="Up to 3% back on purchases" />
             <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
@@ -335,57 +335,73 @@
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         <div data-aos="fade-right" class="col-span-12 flex justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
           <h2 class="lg:text-8xl text-4xl font-bold text-white">What <br class="sm:hidden lg:block"> we offer </h2>
-          <!-- <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
-            <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-              reliable order execution and constant uptime.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
-              HTTP APIs. Connect to our WebSocket for real-time data streaming.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Customer Support</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
-              for partners.
-            </p>
-          </div> -->
-          <!-- <div class="flex flex-col sm:flex-row mt-auto">
-            <BaseButton class="px-10 py-4 bg-inherit text-white border border-[rgba(104, 166, 120, 0.4)] text-base">
-              Know More
-            </BaseButton>
-          </div> -->
         </div>
         <div class="col-span-12 bg-white items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
-            <div class="flex p-8">
-              <img :src="require('~/assets/img/land-clearing.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Land cleaning <br> and development</p>
+            <div v-if="active ==1 " class="w-full slide" :class="{ fade: transitioning }">
+              <div class="flex p-8">
+                <img :src="require('~/assets/img/land-clearing.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Land cleaning <br> and development</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/gated-community.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Gated Community</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/Road.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Internal Paveroads</p>
+              </div>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/gated-community.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Gated Community</p>
+            <div v-if="active == 2"  class="w-full slide" :class="{ fade: transitioning }">
+              <div class="flex p-8">
+                <img :src="require('~/assets/img/water-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/electricity-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/street-lights.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
+              </div>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/Road.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Internal Paveroads</p>
+            <div v-if="active == 3"  class="w-full slide" :class="{ fade: transitioning }">
+              <div class="flex p-8">
+                <img :src="require('~/assets/img/farm-maintainence.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/lush-green-ambience.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
+              </div>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+            <div v-if="active == 4"  class="w-full slide" :class="{ fade: transitioning }">
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+              </div>
+              <div class="flex mt-5 p-8">
+                <img :src="require('~/assets/img/boundary.png')" class="w-16 h-16 object-contain self-center" alt="" />
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
+              </div>
+              <div class="flex p-8">
+                <span class="w-16 h-16 object-contain self-center inline-block" ></span>
+                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal"></p>
+              </div>
             </div>
+            <img @click="changeActive('right')" class="absolute top-[25%] right-[5%] w-5 h-5" src="~/assets/img/double-arrow-right-icon.svg"/>
+            <img @click="changeActive('left')" class="absolute top-[25%] w-5 h-5 left-[5%]" src="~/assets/img/double-arrow-left-icon.svg"/>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
       </div>
     </section>
 
     <!-- Industry-leading security section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+    <!-- <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 p-8 bg-white">
           <div class="w-full">
@@ -407,7 +423,7 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8 p-8">
+        <div data-aos="fade-left" class="col-span-12 relative lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8 p-8">
           <div class="flex p-8">
               <img :src="require('~/assets/img/farm-maintainence.png')" class="w-16 h-16 object-contain self-center" alt="" />
               <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
@@ -420,13 +436,14 @@
               <img :src="require('~/assets/img/lush-green-ambience.png')" class="w-16 h-16 object-contain self-center" alt="" />
               <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
             </div>
-            <!-- <div class="flex mt-5 p-8">
+             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
               <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
             </div> -->
-        </div>
+
+        <!-- </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Getting started section -->
     <section id="contact" class="relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
@@ -474,15 +491,15 @@
           <form @submit="sendEmail" class="w-full">
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
-                <input id="email" type="email" v-model="email" required class="w-full rounded-lg border">
+                <input id="email" type="email" v-model="email" required class="px-4 w-full rounded-lg border">
               </div>
               <div>
                 <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
-                <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg border">
+                <input id="Contact" type="number" v-model="email" required class="px-4 w-full rounded-lg border">
               </div>
               <div>
                 <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
-                <textarea id="message" v-model="message" required class="w-full rounded-lg border"></textarea>
+                <textarea id="message" v-model="message" required class="px-4 w-full rounded-lg border"></textarea>
               </div>
               <div class="w-full mt-5 flex justify-start">
                 <BaseButton
@@ -511,10 +528,10 @@
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-[#5D794F] font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
+          <span class="text-base text-[#5D794F] font-bold uppercase mb-4 sm:mb-2">Support</span>
+          <h2 class="text-4xl theme sm:text-4xl font-bold mb-10 sm:mb-6">Frequently asked questions</h2>
 
-          <ul class="shadow-box">
+          <ul class="shadow-box font-poppins">
             <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
           </ul>
         </div>
@@ -548,6 +565,8 @@ export default {
   components: { VueSlickCarousel },
   data() {
     return {
+      active: 1,
+      transitioning: false,
       selected: 0,
       slide: 0,
       sliding: null,
@@ -681,22 +700,22 @@ export default {
         {
           title: 'Why should I choose Hampshire Estates?',
           description:
-            "We're industry pioneers, dkffekfe"
+            "Hampshire Estates offers exceptional service and has extensive experience in the Nandi Hills area, providing a wide range of properties to suit various preferences and budgets."
         },
         {
           title: 'How secure is Hampshire Estates?',
           description:
-            "We're industry pioneers, xcdcndjcnd"
+            "Hampshire Estates prioritizes the security of clients' information and transactions with robust measures, advanced encryption, and compliance with industry standards."
         },
         {
           title: 'Do I have to buy a whole Farmland?',
           description:
-            "dfwxcscdscd"
+            "Hampshire Estates offers flexible options, allowing you to purchase a whole farmland or specific plots within the farmland based on your preferences."
         },
         {
           title: 'How do I actually buy a Farmland?',
           description:
-            "We're industry pioneers, having been in the cryptocurrency industry since 2016. We've facilitated more than 21 billion USD worth of transactions on our exchange for customers in over 40 countries. Today, we're trusted by over million customers around the world and have received praise for our easy-to-use app, secure wallet, and range of features.",
+            "Hampshire Estates simplifies the buying process by providing expert guidance, comprehensive support, property information, and assistance with visits, negotiations, due diligence, and paperwork."
         },
       ],
       steps: [
@@ -716,12 +735,37 @@ export default {
           img: 'buy-crypto.png',
           title: 'Buy Crypto',
           description:
-            'Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere',
+            'Buy Bitcoin or Ethereum, then securely store it in your Wallet or send it on easily to your friends anywhere'
+            ,
         },
       ],
     }
   },
+  mounted() {
+    this.startLoop()
+    
+  },
   methods: {
+    startLoop() {
+      setInterval(() => {
+        this.transitioning = true;
+        setTimeout(() => {
+          if (this.active < 4) {
+            this.active++;
+          } else if (this.active === 4) {
+            this.active = 1;
+          }
+          this.transitioning = false;
+        }, 500);
+      }, 2000);
+    },
+      changeActive(str) {
+        if(str == 'right' && this.active <3) {
+          this.active ++
+        } else if(str =='left' && this.active > 1) {
+          this.active --
+        }
+      },
       onSlideStart(slide) {
         this.sliding = true
       },
@@ -760,6 +804,14 @@ export default {
   background: linear-gradient(169.4deg, #26602d -6.01%, #0cff10 36.87%, #2ff059 78.04%, #0ee86c 103.77%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.slide {
+  transition: opacity 0.5s;
+}
+
+.fade {
+  opacity: 0;
 }
 
 .theme {
