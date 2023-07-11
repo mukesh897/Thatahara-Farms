@@ -20,7 +20,7 @@ export default {
   css: [
     '@/assets/css/main.css',
   ],
-  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js'],
+  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js', '~/plugins/bootstrap.js'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 
@@ -34,8 +34,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['bootstrap-vue/nuxt'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

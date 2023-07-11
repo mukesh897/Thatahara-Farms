@@ -1,10 +1,10 @@
 <template>
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800 max-h-[86px] bg-trading-tools mb-8">
-    <div class="flex theme flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
+  <nav id="navbar" class="relative z-50 w-full text-neutral-800 max-h-[86px] bg-transparent">
+    <div class="flex theme flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-2">
         <div class="w-full flex flex-row items-center justify-between">
-          <div>
-            <img :src="require('~/assets/img/getting-started/logo-no-background.svg')" class="w-10 h-10 xl:w-28" alt="Nefa Logo" />
+          <div class=" z-50">
+            <img :src="require('~/assets/img/logo.jpeg')" class="w-10 h-10 xl:w-28 rounded-full" alt="Nefa Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />
@@ -20,15 +20,16 @@
           <NavLink name="Watchlist" url="#" />
           <NavLink name="NFT" url="#" />
           <NavLink name="Portfolio" url="#" /> -->
-          <li class="relative group">
+          <li class="relative group py-2">
             <button
               class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
               @click="dropdownToggler"
               @blur="dropdownToggler"
+              disabled="true"
             >
-              <span class="theme whitespace-nowrap" :color="'green'">Buyer's Guide</span>
+              <!-- <span class="theme whitespace-nowrap" :color="'green'">Buyer's Guide</span>
               <ChevronUpIcon v-if="dropdownNavbar" :size="16" :color="'green'"/>
-              <ChevronDownIcon v-else :size="16" />
+              <ChevronDownIcon v-else :size="16" /> -->
             </button>
             <transition name="transform-fade-down">
               <ul
@@ -52,9 +53,9 @@
           </li>
         </ul>
       </div>
-      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3">
+      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3 z-50">
         <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#68A678] to-[#68a678] border border-[#fff] text-white"
+              class="max-w-full px-8 py-2 bg-white border border-[#fff] text-[#5D794F] font-bold"
             >
             <a
               v-smooth-scroll
@@ -88,10 +89,10 @@ export default {
 
 <style scoped>
   .theme {
-    color: #68A678;
+    color: #5D794F;
   }
   .bg-trading-tools {
-  background-color: rgba(104, 166, 120, 0.4);
+  background-color: #5D794F;
   background-size: cover;
   }
 </style>

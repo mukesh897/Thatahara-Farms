@@ -1,84 +1,117 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pt-8">
-      <BaseSection class="">
-        <div
-          class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
-          <h1
-            data-aos="fade-right"
-            data-aos-once="true"
-            class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold theme leading-tight capitalize sm:pr-8 xl:pr-10"
+        <div class="bg-trading-tools h-screen relative mt-[-60px] z-20 max-w-full shadow col-span-12 overflow-hidden">
+          <b-carousel
+            class="h-screen"
+            id="carousel-1"
+            v-model="slide"
+            :interval="4000"
+            controls
+            indicators
+            background="#ababab"
+            img-width="1024"
+            img-height="480"
+            style="text-shadow: 1px 1px 2px #333;"
+            @sliding-start="onSlideStart"
+            @sliding-end="onSlideEnd"
           >
-            Hampshire Estates
-          </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="theme paragraph theme sm:block">
-            A green living project
-          </p>
-          <div
-            data-aos="fade-up"
-            data-aos-once="true"
-            data-aos-delay="700"
-            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
-          >
-            <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#68A678] to-[#68a678] border border-[#fff] text-white"
+            <!-- Text slides with image -->
+            <b-carousel-slide
             >
-            <a
-              v-smooth-scroll
-              data-aos="flip-down"
-              data-aos-delay="150"
-              href="#contact"
-              @click="scrollToSection()"
+            <template #img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C1.png"
+                  srcset="~/assets/img/C1.png"
+                  alt="image slot"
+                >
+              </template>
+            <div class="carousel-caption">
+              <h1 style="font-size: 80px;" class="font-bold">Hampshire Estates</h1>
+              <p class="mt-4 font-bold"> A green living project</p>
+            </div>
+            
+          </b-carousel-slide>
+
+            <!-- Slides with custom text -->
+            <b-carousel-slide
             >
-              Enquire Now
-            </a>  
-            </BaseButton>
-            <!-- <BaseButton
-              class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
+            <template #img>
+              <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C2.png"
+                  srcset="~/assets/img/C2.png"
+                  alt="image slot"
+                >
+            </template>
+            <div class="">
+              <h1 style="font-size: 80px;" class="font-bold">Introducing LaTerra</h1>
+              <p class="mt-4 font-bold">Your own countryside manor</p>
+            </div>
+            </b-carousel-slide>
+
+            <!-- Slides with image only -->
+            <b-carousel-slide
             >
-              <span>Download App</span>
-              <ChevronDownIcon :size="20" class="mt-1 text-[#0c66ee]" />
-            </BaseButton> -->
-          </div>
+            <template #img>
+              <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C3.png"
+                  srcset="~/assets/img/C3.png"
+                  alt="image slot"
+                >
+            </template>
+            <div class="">
+              <h1 style="font-size: 48px;" class="font-bold">A perfect weekend getaway</h1>
+              <p class="mt-4 font-bold"></p>
+            </div>
+            </b-carousel-slide>
+
+            <!-- Slides with img slot -->
+            <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+            <b-carousel-slide>
+              <template #img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C4.png"
+                  srcset="~/assets/img/C4.png"
+                  alt="image slot"
+                >
+              </template>
+              <div class="">
+              <h1 style="font-size: 48px;" class="font-bold">Not an average gathering</h1>
+              <p class="mt-4 font-bold"></p>
+            </div>
+            </b-carousel-slide>
+
+            <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+            <b-carousel-slide>
+              <template #img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C5.png"
+                  srcset="~/assets/img/C5.png"
+                  alt="image slot"
+                >
+              </template>
+              <div class="">
+              <h1 style="font-size: 48px;" class="font-bold">Hottest Investment Zone</h1>
+              <p class="mt-4 font-bold"></p>
+              </div>   
+            </b-carousel-slide>
+          </b-carousel>
         </div>
-        <div class="hidden sm:block col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              :src="require('~/assets/img/Laterra.jpeg')"
-              class="rounded-lg h-auto w-auto"
-              alt=""
-            />
-          </div>
-        </div>
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-1.png')"
-          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-2.png')"
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-3.png')"
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/star.png')"
-          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
-        />
-      </BaseSection>
-    </section>
 
     <!-- Crypto statistic section -->
     <!-- <section
@@ -126,43 +159,122 @@
     </section> -->
 
     <!-- Credit card section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
+    <section class="relative max-w-full sm:mx-4 mt-10 pt-8 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-5">
-          <div class="w-full">
-            <img :src="require('~/assets/img/getting-started/newHero.jpg')" class="w-auto h-3/4 rounded-md" alt="" height="500px" width="450px"/>
+        <div class="col-span-12 lg:col-span-6">
+          <div class="w-full mt-20">
+            <img :src="require('~/assets/img/Laterra.jpeg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-7 space-y-6 px-4 sm:px-6">
-          <h2 class="text-4xl font-bold mt-20 text-white">
-            <span class="theme font-bold">La Terra</span>
+        <div class="col-span-12 lg:col-span-6 space-y-6 px-4 sm:px-6 -mt-10">
+          <h2 class="text-4xl font-bold mt-20 font-black">
+            <span class="font-poppins font-bold">Introducing <span class="theme text-8xl whitespace-nowrap">La Terra</span></span>
           </h2>
-          <p class=" text-[#1B3E25] font-semibold tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
+          <p class=" font-semibold text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
           <!-- <ul class="space-y-4 sm:space-y-2">
             <LandingListItem title="Up to 3% back on purchases" />
             <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
             <LandingListItem title="No annual fee" />
           </ul> -->
           <BaseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-[#68A678] font-bold border-2 border-[#68A678] text-base"
+            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
             >View Gallery</BaseButton
           >
         </div>
       </BaseSection>
     </section>
 
-    <section class="w-full my-24">
+    <section class="w-full">
       <BaseSection>
-        <LandingBuyTradeImage class="sm:hidden mb-8" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Choose <span class="theme">Best</span> Properties
+        <!-- <LandingBuyTradeImage class="sm:hidden mb-8" /> -->
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 px-4">
+          <h2 class="text-8xl font-bold mt-20 font-black">
+            <span class="font-poppins font-bold">Your own <span class="theme text-8xl whitespace-nowrap">Countryside Manor</span></span>
           </h2>
-          <p class="text-[#1B3E25] font-semibold tracking-normal leading-normal">
-            Discover a diverse range of properties tailored to your specific needs, from agricultural and industrial lands to estate and sustainable options, ensuring you make the perfect investment for your future.
+          <div class="flex">
+            <p class="w-full mt-4 font-semibold text-xl font-poppins tracking-normal leading-normal">
+              We are absolutely thrilled to offer you the option of building a farm house on the plot. If you desire a tranquil countryside retreat, our skilled team is ready to create a custom-designed farm house that harmonizes with the natural surroundings. From spacious interiors to functional barns and expansive outdoor spaces, we'll work closely with you to bring your ideal farm house to fruition. Your vision, combined with our expertise, will result in a picturesque farm house where you can enjoy the serenity of rural living.
+
+            </p>
+            <LandingBuyTradeImage class="w-full ml-5 h-50" />
+          </div>
+         
+          <!-- <BaseButton
+              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white"
+            >
+              Schedule a Visit
+          </BaseButton> -->
+          <!-- <div class="space-y-6 lg:pr-12">
+            <LandingExchange
+              title="Amount"
+              name="amount"
+              type="number"
+              default-value="5.000"
+              :exchange-selected="currencySelected"
+              :exchanges="currencies"
+            />
+            <LandingExchange
+              title="Get"
+              name="get"
+              type="number"
+              default-value="0.10901"
+              :exchange-selected="cryptoSelected"
+              :exchanges="cryptocurrencies"
+            />
+            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
+          </div> -->
+        </div>
+        <!-- <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" /> -->
+      </BaseSection>
+    </section>
+
+    <section class="relative max-w-full sm:mx-4 mt-10 pt-8 rounded-2xl overflow-hidden">
+      <BaseSection data-aos="fade-down">
+        <div class="col-span-12 lg:col-span-6">
+          <div class="w-full mt-20">
+            <img :src="require('~/assets/img/getaway.png')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6 space-y-6 px-4 sm:px-6 -mt-10">
+          <p class="text-3xl font-bold mt-20 font-black leading-normal">
+            A Perfect 
           </p>
+          <p class="theme text-6xl font-bold whitespace-nowrap">Weekend Getaway</p>
+          <p class=" font-semibold text-xl font-poppins tracking-normal leading-normal">
+            Situated at a drive of
+            70 minutes from the ever busy Bangalore International airport, 'la terra' by Hampshire Estates never fails to grab your attention for a weekend getaway with your family. This farmland can truly be your personal heaven on Earth! 
+          </p>
+          <!-- <ul class="space-y-4 sm:space-y-2">
+            <LandingListItem title="Up to 3% back on purchases" />
+            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
+            <LandingListItem title="No annual fee" />
+          </ul> -->
           <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#68A678] to-[#68a678] border border-[#fff] text-white"
+            class="w-full mt-5 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
+            >View Gallery</BaseButton
+          >
+        </div>
+      </BaseSection>
+    </section>
+
+    <section class="w-full">
+      <BaseSection>
+        <!-- <LandingBuyTradeImage class="sm:hidden mb-8" /> -->
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 px-4">
+          <h2 class="text-6xl font-bold mt-20 font-black">
+            <span class="font-poppins font-bold">Why <span class="theme text-8xl whitespace-nowrap">Compromise?</span></span>
+          </h2>
+          <div class="flex">
+            <p class="font-semibold max-w-3/4 w-3/4 text-xl font-poppins tracking-normal leading-normal">
+             Why settle for a typical party venue when you can host a truly remarkable gathering at a farm? Embrace the natural beauty, wide-open spaces, and unique experiences that only a farm can provide. It's time to plan an unforgettable farm party that will leave a lasting impression on your guests!
+              Prepare for an adrenaline-pumping excitement as FIA 
+              Grade 2 racing track is coming up in Penakonda, which is about 15 minutes from your personal Paradise 'la terra!' 
+
+            </p>
+          </div>
+         
+          <BaseButton
+              class="max-w-full px-8 font-medium py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white"
             >
               Schedule a Visit
           </BaseButton>
@@ -186,8 +298,36 @@
             <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
           </div> -->
         </div>
-        <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
+        <!-- <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" /> -->
       </BaseSection>
+    </section>
+
+    <section class="relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+        
+        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
+            <div class="flex p-8">
+              <img :src="require('~/assets/img/shiva.png')" class="w-16 h-16 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Isha Foundation <br></p>
+            </div>
+            <div class="flex mt-5 p-8">
+              <img :src="require('~/assets/img/airport.png')" class="w-16 h-16 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Bangalore Airport</p>
+            </div>
+            <div class="flex mt-5 p-8">
+              <img :src="require('~/assets/img/hills.png')" class="w-16 h-16 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Nandi Hills</p>
+            </div>
+            <div class="flex mt-5 p-8">
+              <img :src="require('~/assets/img/train.png')" class="w-16 h-16 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Hindupur Railway Station</p>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+          <h2 class="text-6xl font-bold">What's <span class="sm:hidden lg:block font-poppins text-8xl theme"> Near?</span> </h2>
+        </div>
+        <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
+      </div>
     </section>
 
     <!-- Advanced trading tools section -->
@@ -225,19 +365,19 @@
         <div class="col-span-12 bg-white items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
             <div class="flex p-8">
               <img :src="require('~/assets/img/land-clearing.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Land cleaning <br> and development</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Land cleaning <br> and development</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/gated-community.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Gated Community</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Gated Community</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/Road.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Internal Paveroads</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Internal Paveroads</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
             </div>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
@@ -251,38 +391,38 @@
           <div class="w-full">
             <div class="flex p-8">
               <img :src="require('~/assets/img/water-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Water Connection</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/electricity-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Electricity Infrastructure</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/street-lights.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Street Lights</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/boundary.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg tracking-normal leading-normal">Boundary</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
             </div>
           </div>
         </div>
         <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8 p-8">
           <div class="flex p-8">
               <img :src="require('~/assets/img/farm-maintainence.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Farm Maintainence</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Exotic Farmhouse Designs</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
             </div>
             <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/lush-green-ambience.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Lush Green Ambience</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
             </div>
             <!-- <div class="flex mt-5 p-8">
               <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
             </div> -->
         </div>
       </div>
@@ -290,9 +430,10 @@
 
     <!-- Getting started section -->
     <section id="contact" class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
+      <!-- <div class="w-full py-16 flex items-center">
         <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Contact Us
+          Request a 
+          <span class="theme">callback</span>
         </h2>
         <div
           data-aos="fade-up"
@@ -301,17 +442,21 @@
           <div class=" max-w-md mx-auto">
             <form @submit="sendEmail" class="w-full">
             <div>
-              <label class="flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal" for="email">Email:</label>
+              <label class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
               <input id="email" type="email" v-model="email" required class="w-full rounded-lg">
             </div>
             <div>
-              <label for="message" class="flex items-center text-[#1B3E25] lg:text-2xl sm:text-lg lg:text-32 sm:text-20 tracking-normal leading-normal">Message:</label>
+              <label class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
+              <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg">
+            </div>
+            <div>
+              <label for="message" class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
               <textarea id="message" v-model="message" required class="w-full rounded-lg"></textarea>
             </div>
             <div class="w-full mt-5 flex justify-center">
               <BaseButton
               type="submit"
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#68A678] to-[#68a678] border border-[#fff] text-white"
+              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white font-bold"
             >
               Send
           </BaseButton>
@@ -320,7 +465,41 @@
           </div>
           <div></div>
         </div>
+      </div> -->
+
+      <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+      <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
+        <form @submit="sendEmail" class="w-full">
+              <div>
+                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
+                <input id="email" type="email" v-model="email" required class="w-full rounded-lg">
+              </div>
+              <div>
+                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
+                <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg">
+              </div>
+              <div>
+                <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
+                <textarea id="message" v-model="message" required class="w-full rounded-lg"></textarea>
+              </div>
+              <div class="w-full mt-5 flex justify-center">
+                <BaseButton
+                type="submit"
+                class="max-w-full px-8 py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white font-bold"
+              >
+                Send
+            </BaseButton>
+              </div>
+          </form>
+        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
+           
+        </div>
+        <div data-aos="fade-left" class="col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
+          <h2 class="text-6xl font-bold">Request a  <span class="sm:hidden lg:block font-poppins text-8xl theme"> Callback</span> </h2>
+        </div>
+        <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
       </div>
+    </section>
     </section>
 
     <!-- FAQ section -->
@@ -332,7 +511,7 @@
           </div>
         </div>
         <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-[#1B3E25] font-semibold uppercase mb-4 sm:mb-2">Support</span>
+          <span class="text-base text-[#5D794F] font-semibold uppercase mb-4 sm:mb-2">Support</span>
           <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
 
           <ul class="shadow-box">
@@ -358,13 +537,20 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+  import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+  // optional style for arrows & dots
+  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 import aosMixin from '@/mixins/aos'
 export default {
   name: 'IndexPage',
   mixins: [aosMixin],
+  components: { VueSlickCarousel },
   data() {
     return {
       selected: 0,
+      slide: 0,
+      sliding: null,
       email: '',
       message: '',
       dropdownConcurency: false,
@@ -536,6 +722,12 @@ export default {
     }
   },
   methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      },
     scrollToSection() {
       const section = document.getElementById("contact");
       if (section) {
@@ -564,23 +756,32 @@ export default {
 </script>
 <style scoped>
 .text-header-gradient {
-  background: rgb(18, 69, 35);
+  background: #5D794F;
   background: linear-gradient(169.4deg, #26602d -6.01%, #0cff10 36.87%, #2ff059 78.04%, #0ee86c 103.77%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .theme {
-  color: #68A678;
+  color: #5D794F;
   
+}
+.carousel-inner {
+  height:100vh;
+}
+.carousel-caption {
+    bottom: 160px !important;
 }
 .bg-partner {
   background: url('../assets/img/partner/background.png');
   background-size: cover;
   background-position: center;
 }
+.img-fluid {
+  height:100vh !important;
+}
 .bg-trading-tools {
-  background-color: rgba(104, 166, 120, 0.4);
+  background-color: #5D794F;
   background-size: cover;
   background-position: center;
 }
