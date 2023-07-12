@@ -18,7 +18,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/css/main.css',
+    '@/assets/css/main.css','animate.css/animate.min.css'
   ],
   plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js', '~/plugins/bootstrap.js'],
 

@@ -51,7 +51,7 @@
             </template>
             <div class="">
               <h1 style="" class="font-bold carousel-text">Introducing LaTerra</h1>
-              <p class="mt-4 font-bold">Your own countryside manor</p>
+              <p class="lg:mt-4 font-bold">Your own countryside manor</p>
             </div>
             </b-carousel-slide>
 
@@ -166,8 +166,8 @@
             <img :src="require('~/assets/img/LaT.jpg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 space-y-6 lg:px-4 sm:px-6 lg:-mt-10">
-          <h2 class="lg:text-6xl text-2xl font-bold mt-10 lg:mt-20 font-black">
+        <div class="col-span-12 lg:col-span-6 lg:space-y-6 space-y-3 lg:px-4 sm:px-6 lg:-mt-10">
+          <h2 class="lg:text-6xl text-2xl font-bold mt-10 custom-text lg:mt-20 lg:font-black">
             <span class="font-poppins font-bold">Introducing <span class="theme lg:text-8xl text-6xl whitespace-nowrap">La Terra</span></span>
           </h2>
           <p class="font-semibold lg:text-xl font-poppins tracking-normal leading-normal">Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.</p>
@@ -187,12 +187,12 @@
     <section class="w-full">
       <BaseSection>
         <LandingBuyTradeImage class="lg:hidden mb-4 mt-10" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 lg:px-4">
-          <h2 class="lg:text-8xl text-2xl font-bold lg:mt-20 font-black">
-            <span class="font-poppins font-bold">Your own <span class="theme lg:text-8xl text-4xl  whitespace-nowrap">Countryside Manor</span></span>
+        <div data-aos="fade-right" class="col-span-12 lg:shadow lg:col-span-12 mt-4 xl:mt-20 lg:space-y-6 space-y-3 lg:px-4">
+          <h2 class="lg:text-8xl text-2xl font-bold custom-text lg:mt-20 lg:font-black">
+            <span class="font-poppins font-bold">Your own <span class="theme lg:text-8xl text-6xl  lg:whitespace-nowrap">Countryside Manor</span></span>
           </h2>
           <div class="flex">
-            <p class="w-full mt-4 font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
+            <p class="w-full mt-4 custom-text font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
               We are absolutely thrilled to offer you the option of building a farm house on the plot. If you desire a tranquil countryside retreat, our skilled team is ready to create a custom-designed farm house that harmonizes with the natural surroundings. From spacious interiors to functional barns and expansive outdoor spaces, we'll work closely with you to bring your ideal farm house to fruition. Your vision, combined with our expertise, will result in a picturesque farm house where you can enjoy the serenity of rural living.
 
             </p>
@@ -204,7 +204,7 @@
             >
               Schedule a Visit
           </BaseButton> -->
-          <!-- <div class="space-y-6 lg:pr-12">
+          <!-- <div class="lg:space-y-6 space-y-3 lg:pr-12">
             <LandingExchange
               title="Amount"
               name="amount"
@@ -228,18 +228,18 @@
       </BaseSection>
     </section>
 
-    <section class="relative max-w-full sm:mx-4 mt-10 lg:pt-8 rounded-2xl overflow-hidden">
+    <section class="relative max-w-full sm:mx-4 mt-20 lg:pt-8 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
           <div class="w-full lg:mt-20 mt-10">
             <img :src="require('~/assets/img/getaway.png')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 lg:space-y-6 lg:px-4 sm:px-6 -mt-10">
+        <div class="col-span-12 custom-text lg:col-span-6 lg:lg:space-y-6 space-y-3 lg:px-4 sm:px-6 -mt-10">
           <p class="lg:4xl text-3xl font-bold lg:mt-20 mt-10 font-black leading-normal">
             A Perfect 
           </p>
-          <p class="theme lg:text-6xl text-4xl font-bold whitespace-nowrap">Weekend Getaway</p>
+          <p class="theme lg:text-6xl text-4xl mt-0 font-bold whitespace-nowrap">Weekend Getaway</p>
           <p class=" font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
             Situated at a drive of
             70 minutes from the ever busy Bangalore International airport, 'la terra' by Hampshire Estates never fails to grab your attention for a weekend getaway with your family. This farmland can truly be your personal heaven on Earth! 
@@ -250,7 +250,7 @@
             <LandingListItem title="No annual fee" />
           </ul> -->
           <BaseButton
-            class="w-full mt-5 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
+            class="w-full mt-2 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
             >View Gallery</BaseButton
           >
         </div>
@@ -260,12 +260,12 @@
     <section class="w-full">
       <BaseSection>
         <!-- <LandingBuyTradeImage class="sm:hidden mb-8" /> -->
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-12 mt-4 xl:mt-20 space-y-6 lg:px-4">
-          <h2 class="lg:text-6xl text-3xl font-bold mt-10 lg:mt-20 font-black">
+        <div data-aos="fade-right" class="col-span-12 lg:mt-20 lg:col-span-12 mt-4 xl:mt-20 lg:space-y-6 space-y-3 lg:px-4">
+          <h2 class="lg:text-6xl custom-text text-3xl font-bold mt-10 lg:mt-20 lg:font-black">
             <span class="font-poppins font-bold">Why <span class="theme lg:text-8xl text-4xl whitespace-nowrap">Compromise?</span></span>
           </h2>
           <div class="flex">
-            <p class="font-semibold lg:max-w-3/4 lg:w-3/4 lg:text-xl font-poppins tracking-normal leading-normal">
+            <p class="font-semibold custom-text lg:max-w-3/4 lg:w-3/4 lg:text-xl font-poppins tracking-normal leading-normal">
              Why settle for a typical party venue when you can host a truly remarkable gathering at a farm? Embrace the natural beauty, wide-open spaces, and unique experiences that only a farm can provide. It's time to plan an unforgettable farm party that will leave a lasting impression on your guests!
               Prepare for an adrenaline-pumping excitement as FIA 
               Grade 2 racing track is coming up in Penakonda, which is about 15 minutes from your personal Paradise 'la terra!' 
@@ -274,7 +274,7 @@
           </div>
          
           <BaseButton
-              class="max-w-full px-8 font-medium py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white"
+              class="max-w-full w-full lg:w-auto flex justify-center lg:justify-start px-8 font-medium py-4 bg-gradient-to-r from-[#5D794F] to-[#5D794F] border border-[#fff] text-white"
             >
             <a
               v-smooth-scroll
@@ -285,7 +285,7 @@
               Schedule a Visit
             </a> 
           </BaseButton>
-          <!-- <div class="space-y-6 lg:pr-12">
+          <!-- <div class="lg:space-y-6 space-y-3 lg:pr-12">
             <LandingExchange
               title="Amount"
               name="amount"
@@ -311,100 +311,125 @@
 
     <section class="relative max-w-full my-20 mx-4 lg:mx-0 shadow rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-left" class="lg:hidden col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-bold">What's <span class="sm:hidden lg:block font-poppins text-6xl theme"> Near?</span> </h2>
+        <div data-aos="fade-left" class="lg:hidden col-span-12 flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 lg:px-4 sm:px-6 mt-8">
+          <h2 class="text-4xl font-bold custom-text">What's <span class="sm:hidden lg:block font-poppins text-6xl theme"> Near?</span> </h2>
         </div>
-        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
+        <!-- <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 p-8 sm:px-6 mt-8">
             <div class="flex p-8">
-              <img :src="require('~/assets/img/shiva.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Isha Foundation <br></p>
+              <img :src="require('~/assets/img/shiva.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Isha Foundation <br></p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/airport.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Bangalore Airport</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/airport.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Bangalore Airport</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/hills.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Nandi Hills</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/hills.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Nandi Hills</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/train.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Hindupur Railway Station</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/train.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">Hindupur Railway Station</p>
             </div>
+        </div> -->
+        <div data-aos="fade-right" class="col-span-12 items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 p-8 sm:px-6 mt-8">
+          <div class="flex p-8 animate__animated animate__fadeInUp">
+            <img :src="require('~/assets/img/shiva.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+            <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Isha Foundation <br></p>
+          </div>
+          <div class="flex p-8 mt-5 animate__animated animate__fadeInUp animate__delay-1s">
+            <img :src="require('~/assets/img/airport.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+            <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Bangalore Airport</p>
+          </div>
+          <div class="flex p-8 mt-5 animate__animated animate__fadeInUp animate__delay-2s">
+            <img :src="require('~/assets/img/hills.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+            <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Nandi Hills</p>
+          </div>
+          <div class="flex p-8 mt-5  animate__animated animate__fadeInUp animate__delay-3s">
+            <img :src="require('~/assets/img/train.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+            <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">Hindupur Railway Station</p>
+          </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 hidden  lg:flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
-          <h2 class="text-6xl font-bold">What's <span class="sm:hidden lg:block font-poppins text-8xl theme"> Near?</span> </h2>
+        <div data-aos="fade-left" class="col-span-12 hidden  lg:flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 lg:px-4 sm:px-6 mt-8">
+          <h2 class="text-6xl font-bold custom-text">What's <span class="sm:hidden lg:block font-poppins text-8xl theme"> Near?</span> </h2>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
       </div>
     </section>
 
     <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full mx-4 my-20 pt-16 shadow rounded-2xl overflow-hidden">
+    <section class="relative max-w-full mx-4 my-20 pt-16 rounded-2xl overflow-hidden">
       <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 flex justify-center text-left lg:items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6">
-          <h2 class="lg:text-8xl text-5xl font-bold text-white">What <br class="sm:hidden lg:block"> we offer </h2>
+        <div data-aos="fade-right" class="col-span-12 flex justify-center text-left lg:items-center lg:col-span-12 space-y-8 sm:lg:space-y-6 space-y-3 lg:px-4 sm:px-6">
+          <h2 class="lg:text-8xl text-5xl custom-text font-bold">What <br class="sm:hidden lg:block"> <span class="theme text-6xl lg:text-8xl">we offer?</span> </h2>
         </div>
-        <div class="col-span-12 bg-white items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
-            <div v-if="active ==1 " class="w-full slide" :class="{ fade: transitioning }">
-              <div class="flex p-8">
-                <img :src="require('~/assets/img/land-clearing.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Land cleaning <br> and development</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/gated-community.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Gated Community</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/Road.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Internal Paveroads</p>
-              </div>
+        
+        <div class="col-span-12 bg-white items-center lg:col-span-12 sm:lg:space-y-6 space-y-3 p-8 sm:px-6 mt-8">
+          <div v-if="active ==1 " class="w-full slide" >
+            <div class="flex p-8 mt-5 ustify between w-full">
+              <img :src="require('~/assets/img/land-clearing.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Land cleaning <br> and development</p>
             </div>
-            <div v-if="active == 2"  class="w-full slide" :class="{ fade: transitioning }">
-              <div class="flex p-8">
-                <img :src="require('~/assets/img/water-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/electricity-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/street-lights.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
-              </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/street-lights.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
             </div>
-            <div v-if="active == 3"  class="w-full slide" :class="{ fade: transitioning }">
-              <div class="flex p-8">
-                <img :src="require('~/assets/img/farm-maintainence.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/lush-green-ambience.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
-              </div>
+          </div>
+          <div v-if="active == 2"  class="w-full slide">
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/water-connection.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
             </div>
-            <div v-if="active == 4"  class="w-full slide" :class="{ fade: transitioning }">
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
-              </div>
-              <div class="flex mt-5 p-8">
-                <img :src="require('~/assets/img/boundary.png')" class="w-16 h-16 object-contain self-center" alt="" />
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
-              </div>
-              <div class="flex p-8">
-                <span class="w-16 h-16 object-contain self-center inline-block" ></span>
-                <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal"></p>
-              </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/electricity-connection.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
             </div>
-            <!-- <img @click="changeActive('right')" class="absolute top-[25%] right-[5%] w-5 h-5" src="~/assets/img/double-arrow-right-icon.svg"/>
-            <img @click="changeActive('left')" class="absolute top-[25%] w-5 h-5 left-[5%]" src="~/assets/img/double-arrow-left-icon.svg"/> -->
+          </div>
+          <div v-if="active == 3"  class="w-full slide">
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/farm-maintainence.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
+            </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
+            </div>
+        
+          </div>
+          <div v-if="active == 4"  class="w-full slide" >
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/untitled.png')" class=" lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+            </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/boundary.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
+            </div>
+          </div>
+          <div v-if="active == 5"  class="w-full slide" >
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/Road.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Internal Paveroads</p>
+            </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/lush-green-ambience.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
+            </div>
+          </div>
+          <div v-if="active == 6"  class="w-full slide">
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/gated-community.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Gated Community</p>
+            </div>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/street-lights.png')" class="lg:w-40 lg:h-40 w-24 h-24  object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
+            </div>
+          </div>
+          <!-- <img @click="changeActive('right')" class="absolute top-[25%] right-[5%] w-5 h-5" src="~/assets/img/double-arrow-right-icon.svg"/>
+          <img @click="changeActive('left')" class="absolute top-[25%] w-5 h-5 left-[5%]" src="~/assets/img/double-arrow-left-icon.svg"/> -->
         </div>
+
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
       </div>
     </section>
@@ -415,39 +440,39 @@
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6 p-8 bg-white">
           <div class="w-full">
             <div class="flex p-8">
-              <img :src="require('~/assets/img/water-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
+              <img :src="require('~/assets/img/water-connection.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Water Connection</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/electricity-connection.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/electricity-connection.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Electricity Infrastructure</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/street-lights.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/street-lights.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Street Lights</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/boundary.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/boundary.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">Boundary</p>
             </div>
           </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 relative lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8 p-8">
+        <div data-aos="fade-left" class="col-span-12 relative lg:col-span-5 space-y-8 sm:lg:space-y-6 space-y-3 mt-8 xl:px-8 p-8">
           <div class="flex p-8">
-              <img :src="require('~/assets/img/farm-maintainence.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
+              <img :src="require('~/assets/img/farm-maintainence.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Farm Maintainence</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/exotic-farmhouse-design.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Exotic Farmhouse Designs</p>
             </div>
-            <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/lush-green-ambience.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
+            <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/lush-green-ambience.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Lush Green Ambience</p>
             </div>
-             <div class="flex mt-5 p-8">
-              <img :src="require('~/assets/img/untitled.png')" class="w-16 h-16 object-contain self-center" alt="" />
-              <p class="ml-5 flex items-center lg:text-2xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
+             <div class="flex p-8 mt-5 justify between w-full">
+              <img :src="require('~/assets/img/untitled.png')" class="lg:w-40 lg:h-40 w-24 h-24 object-contain self-center" alt="" />
+              <p class="ml-5 flex items-center lg:text-4xl font-bold sm:text-lg tracking-normal leading-normal">CCTV Security</p>
             </div> -->
 
         <!-- </div>
@@ -468,15 +493,15 @@
           <div class=" max-w-md mx-auto">
             <form @submit="sendEmail" class="w-full">
             <div>
-              <label class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
+              <label class="flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
               <input id="email" type="email" v-model="email" required class="w-full rounded-lg">
             </div>
             <div>
-              <label class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
+              <label class="flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
               <input id="Contact" type="number" v-model="email" required class="w-full rounded-lg">
             </div>
             <div>
-              <label for="message" class="flex items-center lg:text-2xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
+              <label for="message" class="flex items-center lg:text-4xl font-bold sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
               <textarea id="message" v-model="message" required class="w-full rounded-lg"></textarea>
             </div>
             <div class="w-full mt-5 flex justify-center">
@@ -496,22 +521,22 @@
       <section class="relative max-w-full overflow-hidden">
       <div class="relative max-w-screen-xl lg:px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         
-        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:space-y-6 p-8 sm:px-6 mt-8">
+        <div data-aos="fade-right" class="col-span-12  items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 p-8 sm:px-6 mt-8">
           <form ref="form" class="w-full">
             <div>
-                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Full Name:</label>
+                <label class="flex items-center lg:text-4xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Full Name:</label>
                 <input id="name" type="name" required class="lg:px-4 py-2 w-full capitalize rounded-lg border">
               </div>
               <div class="mt-3">
-                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
+                <label class="flex items-center lg:text-4xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Email:</label>
                 <input id="email" type="email" required class="lg:px-4 py-2 w-full rounded-lg border">
               </div>
               <div class="mt-3">
-                <label class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
+                <label class="flex items-center lg:text-4xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal" for="email">Phone:</label>
                 <input id="phoneNumber" type="number" required class="lg:px-4 py-2 w-full rounded-lg border">
               </div>
               <div class="mt-3">
-                <label for="message" class="flex items-center lg:text-2xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
+                <label for="message" class="flex items-center lg:text-4xl font-medium sm:text-lg lg:text-32 sm:text-20 text-[#1B3E25] tracking-normal leading-normal">Message:</label>
                 <textarea id="message" required class="lg:px-4 py-2 w-full rounded-lg border"></textarea>
               </div>
               <div @click="sendEmail()" class="w-full mt-5 flex justify-start">
@@ -524,7 +549,7 @@
               </div>
           </form>
         </div>
-        <div data-aos="fade-left" class="col-span-12 font-poppins flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:space-y-6 lg:px-4 sm:px-6 mt-8">
+        <div data-aos="fade-left" class="col-span-12 font-poppins flex bg-white justify-center items-center lg:col-span-6 space-y-8 sm:lg:space-y-6 space-y-3 lg:px-4 sm:px-6 mt-8">
           <h2 class="text-6xl font-bold">Request a  <span class="sm:hidden lg:block font-poppins text-8xl theme"> Callback</span> </h2>
         </div>
         <!-- <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" /> -->
@@ -835,9 +860,7 @@ export default {
   -webkit-text-fill-color: transparent;
 }
 
-.slide {
-  transition: opacity 0.5s;
-}
+
 
 .fade {
   opacity: 0;
@@ -858,8 +881,17 @@ export default {
   .carousel-caption {
     bottom: 160px !important;
   }
+
+  .slide {
+    display: flex;
+    flex-direction: row;
+    transition: opacity 0.5s;
+  }
   .carousel-text {
     font-size: 80px;
+  }
+  .custom-text {
+    text-align: left;
   }
 }
 
@@ -867,8 +899,17 @@ export default {
   .carousel-inner {
     height:50vh;
   }
+  .custom-text {
+    text-align: center;
+  }
   .img-fluid {
     height:50vh !important;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.5s;
   }
   .carousel-text {
     font-size: 48px;
@@ -893,3 +934,42 @@ export default {
   max-height: 0;
 }
 </style>
+
+<!-- <style scoped>
+/* .slide-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s;
+} */
+
+.slide-enter {
+  animation: slideInLeft 0.5s;
+}
+
+.slide-leave-active {
+  animation: slideOutRight 0.5s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+</style> -->
