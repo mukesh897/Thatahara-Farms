@@ -3,7 +3,7 @@
     <div class="flex theme flex-col max-w-screen-xl px-8 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-2">
         <div class="w-full flex flex-row items-center pt-4 justify-between">
-          <div class=" z-50">
+          <div @click="$router.push('/')" class="cursor-pointer z-50">
             <img :src="require('~/assets/img/logo.jpeg')" class="w-10 h-10 xl:w-28 rounded-full" alt="Nefa Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">

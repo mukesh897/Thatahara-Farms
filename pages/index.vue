@@ -177,6 +177,7 @@
             <LandingListItem title="No annual fee" />
           </ul> -->
           <BaseButton
+            @click="$router.push('/gallery')"
             class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
             >View Gallery</BaseButton
           >
@@ -250,6 +251,7 @@
             <LandingListItem title="No annual fee" />
           </ul> -->
           <BaseButton
+            @click="$router.push('/gallery')"
             class="w-full mt-2 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
             >View Gallery</BaseButton
           >
