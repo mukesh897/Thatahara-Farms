@@ -163,10 +163,10 @@
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
           <div class="w-full lg:mt-20">
-            <img :src="require('~/assets/img/LaT.jpg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/getting-started/newHero.jpg')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-6 lg:space-y-6 space-y-3 lg:px-4 sm:px-6 lg:-mt-10">
+        <div class="col-span-12 lg:col-span-6 lg:space-y-6 space-y-3 lg:px-4 sm:px-6">
           <h2 class="lg:text-6xl text-2xl font-bold mt-10 custom-text lg:mt-20 lg:font-black">
             <span class="font-poppins font-bold">Introducing <span class="theme lg:text-8xl text-6xl whitespace-nowrap">La Terra</span></span>
           </h2>
@@ -193,7 +193,7 @@
             <span class="font-poppins font-bold">Your own <span class="theme lg:text-8xl text-6xl  lg:whitespace-nowrap">Countryside Manor</span></span>
           </h2>
           <div class="flex">
-            <p class="w-full mt-4 custom-text font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
+            <p class="lg:w-3/4 lg:mt-20  sm:mt-4 custom-text font-semibold lg:text-xl font-poppins tracking-normal leading-normal">
               We are absolutely thrilled to offer you the option of building a farm house on the plot. If you desire a tranquil countryside retreat, our skilled team is ready to create a custom-designed farm house that harmonizes with the natural surroundings. From spacious interiors to functional barns and expansive outdoor spaces, we'll work closely with you to bring your ideal farm house to fruition. Your vision, combined with our expertise, will result in a picturesque farm house where you can enjoy the serenity of rural living.
 
             </p>
@@ -232,12 +232,12 @@
     <section class="relative max-w-full sm:mx-4 mt-20 lg:pt-8 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down">
         <div class="col-span-12 lg:col-span-6">
-          <div class="w-full lg:mt-20 mt-10">
+          <div class="w-full">
             <img :src="require('~/assets/img/getaway.png')" class="w-full h-full rounded-md" alt="" height="500px" width="450px"/>
           </div>
         </div>
-        <div class="col-span-12 custom-text lg:col-span-6 lg:lg:space-y-6 space-y-3 lg:px-4 sm:px-6 -mt-10">
-          <p class="lg:4xl text-3xl font-bold lg:mt-20 mt-10 font-black leading-normal">
+        <div class="col-span-12 custom-text lg:col-span-6 lg:space-y-6 space-y-3 lg:px-4 sm:px-6 -mt-10">
+          <p class="lg:4xl text-3xl font-bold lg:mt-20 mt-10 lg:font-black leading-normal">
             A Perfect 
           </p>
           <p class="theme lg:text-6xl text-4xl mt-0 font-bold whitespace-nowrap">Weekend Getaway</p>
@@ -252,7 +252,7 @@
           </ul> -->
           <BaseButton
             @click="$router.push('/gallery')"
-            class="w-full mt-2 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
+            class="w-full mt-custom lg:mt-12 sm:max-w-[240px] px-10 py-4 bg-inherit text-[#5D794F] font-bold border-2 border-[#5D794F] text-base"
             >View Gallery</BaseButton
           >
         </div>
@@ -895,6 +895,12 @@ export default {
   .custom-text {
     text-align: left;
   }
+  .mt-custom {
+    margin-top: 48px;
+  }
+  .mt-custom-button {
+    margin-top: 48px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -906,6 +912,14 @@ export default {
   }
   .img-fluid {
     height:50vh !important;
+  }
+   
+  .mt-custom {
+    margin-top: 16px;
+  }
+
+  .mt-custom-button {
+    margin-top: 8px;
   }
 
   .slide {
