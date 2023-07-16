@@ -17,6 +17,7 @@
     "nuxt": "^2.15.8",
     "swiper": "^10.0.4",
     "vue": "^2.7.10",
+    "vue-image-lightbox-carousel": "^1.0.7",
     "vue-material-design-icons": "^5.2.0",
     "vue-server-renderer": "^2.7.10",
     "vue-slick-carousel": "^1.0.6",

@@ -22,6 +22,16 @@ input::-webkit-inner-spin-button {
   margin: 0; 
 }
 
+@font-face {
+  font-family: 'Cinzel';
+  src: url('~/assets/Cinzel.ttf')  format('truetype'),
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('~/assets/Raleway.ttf')  format('truetype'),
+}
+
 input[type=number] {
   -moz-appearance: textfield;
 }
