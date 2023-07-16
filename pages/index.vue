@@ -198,7 +198,7 @@
     
 
     <!-- Credit card section -->
-    <section id="about" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 pt-12 pb-0 rounded-2xl overflow-hidden">
+    <section id="about" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 pt-12 pb-5 rounded-2xl overflow-hidden">
       <BaseSection data-aos="flex items-center px-0">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
