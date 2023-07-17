@@ -4,7 +4,7 @@
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-2">
         <div class="w-full px-4 flex flex-row items-center justify-between">
           <div class="pb-4">
-            <img :src="require('~/assets/img/getting-started/logo-no-background.svg')" class="w-10 h-10 xl:w-28" alt="Nefa Logo" />
+            <img :src="require('~/assets/img/logo.jpeg')" :srcset="require('~/assets/img/logo.jpeg')" class="w-10 h-10 xl:w-28 object-cover" alt="Nefa Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />

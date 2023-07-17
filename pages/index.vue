@@ -194,8 +194,8 @@
                 class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
                 width="1024"
                 height="480"
-                src="~/assets/img/new/10.JPG"
-                srcset="~/assets/img/new/10.JPG"
+                src="~/assets/img/new/14.JPG"
+                srcset="~/assets/img/new/14.JPG"
                 alt="image slot"
               >
             </template>
@@ -646,7 +646,7 @@
                 indicators
                 background="#ababab"
                 img-width="1024"
-                img-height="480"
+                img-height="373"
                 style="text-shadow: 1px 1px 2px #333;"
                 @sliding-start="onSlideStart"
                 @sliding-end="onSlideEnd"
@@ -658,27 +658,27 @@
                 <div class="lg:flex block lg:justify-between">
                   <img
                     @click=""
-                    class="d-block img-fluid w-100 lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:w-1/3"
                     width="1024"
-                    height="480"
-                    src="~/assets/img/new/1.JPG"
-                    srcset="~/assets/img/new/1.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
-                    width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/2.JPG"
                     srcset="~/assets/img/new/2.JPG"
                     alt="image slot"
                   >
                   <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
-                    src="~/assets/img/new/3.JPG"
-                    srcset="~/assets/img/new/3.JPG"
+                    height="373"
+                    src="~/assets/img/new/5.JPG"
+                    srcset="~/assets/img/new/5.JPG"
+                    alt="image slot"
+                  >
+                  <img
+                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
+                    width="1024"
+                    height="373"
+                    src="~/assets/img/new/4.JPG"
+                    srcset="~/assets/img/new/4.JPG"
                     alt="image slot"
                   >
                 </div>
@@ -694,25 +694,25 @@
             <template #img>
                 <div class="lg:flex lg:justify-between">
                   <img
-                    class="d-block w-100 img-fluid lg:w-1/2  "
+                    class="d-block w-100 img-fluid lg:w-1/3  "
                     width="1024"
-                    height="480"
-                    src="~/assets/img/new/4.JPG"
-                    srcset="~/assets/img/new/4.JPG"
+                    height="373"
+                    src="~/assets/img/new/1.JPG"
+                    srcset="~/assets/img/new/1.JPG"
                     alt="image slot"
                   >
                   <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
-                    src="~/assets/img/new/5.JPG"
-                    srcset="~/assets/img/new/5.JPG"
+                    height="373"
+                    src="~/assets/img/new/3.JPG"
+                    srcset="~/assets/img/new/3.JPG"
                     alt="image slot"
                   >
                   <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/6.JPG"
                     srcset="~/assets/img/new/6.JPG"
                     alt="image slot"
@@ -730,7 +730,7 @@
                   <img
                     class="d-block w-100 img-fluid lg:w-1/3  "
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/7.JPG"
                     srcset="~/assets/img/new/7.JPG"
                     alt="image slot"
@@ -738,7 +738,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/8.JPG"
                     srcset="~/assets/img/new/8.JPG"
                     alt="image slot"
@@ -746,7 +746,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/9.JPG"
                     srcset="~/assets/img/new/9.JPG"
                     alt="image slot"
@@ -763,7 +763,7 @@
                   <img
                     class="d-block w-100 img-fluid lg:w-1/3  "
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/10.JPG"
                     srcset="~/assets/img/new/10.JPG"
                     alt="image slot"
@@ -771,7 +771,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/11.JPG"
                     srcset="~/assets/img/new/11.JPG"
                     alt="image slot"
@@ -779,7 +779,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/12.JPG"
                     srcset="~/assets/img/new/12.JPG"
                     alt="image slot"
@@ -796,7 +796,7 @@
                   <img
                     class="d-block w-100 img-fluid lg:w-1/3  "
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/13.JPG"
                     srcset="~/assets/img/new/13.JPG"
                     alt="image slot"
@@ -804,7 +804,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/14.JPG"
                     srcset="~/assets/img/new/14.JPG"
                     alt="image slot"
@@ -812,7 +812,7 @@
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
                     width="1024"
-                    height="480"
+                    height="373"
                     src="~/assets/img/new/15.JPG"
                     srcset="~/assets/img/new/15.JPG"
                     alt="image slot"
@@ -1493,6 +1493,7 @@ export default {
   }
   .img-fluid {
     max-height:480px !important;
+    object-fit: cover !important;
   }
   .carousel-caption {
     bottom: 160px !important;
@@ -1540,6 +1541,7 @@ export default {
   }
   .img-fluid {
     height:50vh !important;
+    object-fit: cover !important;
   }
    
   .mt-custom {
