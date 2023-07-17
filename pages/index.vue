@@ -5,7 +5,8 @@
         <button type="button" class="border-0 px-4 py-2 text-white fs-md-5 font-bold text-[1rem] enq-btn" data-bs-toggle="modal" data-bs-target="#enquire_form_popup">ENQUIRE NOW</button>
        </div>
         <div class="relative max-w-full shadow col-span-12 overflow-hidden">
-          <b-carousel
+            <div class="hidden lg:block">
+              <b-carousel
             class="bg-white"
             id="carousel-1"
             v-model="slide"
@@ -130,10 +131,132 @@
               </div>   
             </b-carousel-slide> -->
           </b-carousel>
+            </div>
+            <div class="lg:hidden">
+              <b-carousel
+            class="bg-white"
+            id="carousel-1"
+            v-model="slide"
+            :interval="4000"
+            controls
+            indicators
+            background="#ababab"
+            img-width="1024"
+            img-height="480"
+            style="text-shadow: 1px 1px 2px #333;"
+            @sliding-start="onSlideStart"
+            @sliding-end="onSlideEnd"
+          >
+            <!-- Text slides with image -->
+            <b-carousel-slide
+            >
+            <template #img>
+                <div class="lg:flex block lg:justify-between">
+                  <img
+                    class="d-block img-fluid w-100 lg:w-1/2"
+                    width="1024"
+                    height="480"
+                    src="~/assets/img/new/7.JPG"
+                    srcset="~/assets/img/new/7.JPG"
+                    alt="image slot"
+                  >
+                </div>
+              
+              </template>
+           
+            
+          </b-carousel-slide>
+
+            <!-- Slides with custom text -->
+            <b-carousel-slide
+            >
+            <template #img>
+                <div class="lg:flex lg:justify-between">
+                  <img
+                    class="d-block img-fluid lg:w-1/2  "
+                    width="1024"
+                    height="480"
+                    src="~/assets/img/new/10.JPG"
+                    srcset="~/assets/img/new/10.JPG"
+                    alt="image slot"
+                  >
+                </div>
+              
+              </template>
+           
+            </b-carousel-slide>
+
+            <!-- Slides with image only -->
+             <b-carousel-slide
+            >
+            <template #img>
+              <img
+                class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                width="1024"
+                height="480"
+                src="~/assets/img/new/10.JPG"
+                srcset="~/assets/img/new/10.JPG"
+                alt="image slot"
+              >
+            </template>
+            </b-carousel-slide>
+
+            <b-carousel-slide
+            >
+            <template #img>
+              <img
+                class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                width="1024"
+                height="480"
+                src="~/assets/img/new/13.JPG"
+                srcset="~/assets/img/new/13.JPG"
+                alt="image slot"
+              >
+            </template>
+            </b-carousel-slide>
+
+            <!-- Slides with img slot -->
+            <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+            <!-- <b-carousel-slide>
+              <template #img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C4.png"
+                  srcset="~/assets/img/C4.png"
+                  alt="image slot"
+                >
+              </template>
+              <div class="">
+              <h1 style="font-size: 48px;" class="font-bold"></h1>
+              <p class="mt-4 font-bold"></p>
+            </div>
+            </b-carousel-slide> -->
+
+            <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+            <!-- <b-carousel-slide>
+              <template #img>
+                <img
+                  class="d-block img-fluid w-100"
+                  width="1024"
+                  height="480"
+                  src="~/assets/img/C5.png"
+                  srcset="~/assets/img/C5.png"
+                  alt="image slot"
+                >
+              </template>
+              <div class="">
+              <h1 style="font-size: 48px;" class="font-bold">Hottest Investment Zone</h1>
+              <p class="mt-4 font-bold"></p>
+              </div>   
+            </b-carousel-slide> -->
+          </b-carousel>
+            </div>
           <div class="flex justify-between custom-pad py-4">
               <div>
                 <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] uppercase">Limited Edition</h1>
-                <p class="mt-1 font-bold text-2xl font-[Cinzel] uppercase"> LA TERRA FARMS</p>
+                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase"> LA TERRA FARMS</p>
               </div>
               <div class="hidden lg:block">
                 <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase">A green living Project</p>
@@ -198,7 +321,7 @@
     
 
     <!-- Credit card section -->
-    <section id="about" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 pt-12 pb-5 rounded-2xl overflow-hidden">
+    <section id="about" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 pt-12 lg:pb-5 rounded-2xl overflow-hidden">
       <BaseSection data-aos="flex items-center px-0">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
@@ -226,10 +349,10 @@
       </BaseSection>
     </section>
 
-    <section class="px-0 mx-0 relative max-w-full sm:mx-4 lg:mt-10 lg:py-12 pt-12 pb-0 rounded-2xl overflow-hidden">
+    <section class="px-0 mx-0 relative max-w-full sm:mx-4 lg:mt-10 lg:py-12 lg:pt-12 pb-0 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down flex items-center px-0">
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white z-10 rounded-r-[71px] lg:mr-[-100px] px-5 py-12  h-max">
+          <div class="bg-white z-10 rounded-r-[71px] lg:mr-[-100px] px-5 lg:py-12 pb-12 pt-0  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               WHAT WE OFFER
             </h2>
