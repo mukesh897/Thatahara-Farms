@@ -1400,14 +1400,7 @@ export default {
 </script>
 <style scoped>
 
-.enq-btn {
-    position: fixed;
-    top: 55%;
-    right: -4.5% !important;
-    z-index: 100;
-    rotate: 270deg;
-    background-color: #c49b36;
-}
+
 .text-header-gradient {
   background: #5D794F;
   background: linear-gradient(169.4deg, #26602d -6.01%, #0cff10 36.87%, #2ff059 78.04%, #0ee86c 103.77%);
@@ -1477,6 +1470,14 @@ export default {
 
 
 @media only screen and (min-width: 760px) {
+  .enq-btn {
+    position: fixed;
+    top: 55%;
+    right: -4.5% !important;
+    z-index: 100;
+    rotate: 270deg;
+    background-color: #c49b36;
+}
   .carousel-inner {
     /* height:100vh; */
     background-color: white !important;
@@ -1520,6 +1521,15 @@ export default {
   .carousel-inner {
     height:50vh;
   }
+
+  .enq-btn {
+    position: fixed;
+    top: 55%;
+    right: -7.5% !important;
+    z-index: 100;
+    rotate: 270deg;
+    background-color: #c49b36;
+}
 
   .custom-pad {
     padding-left: 8px;
