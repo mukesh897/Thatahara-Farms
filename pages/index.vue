@@ -391,9 +391,9 @@
             </h2>
             <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                 The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.</br>
-              • Kempegowda International Airport <br/> <span class="ml-2">Bangalore:</span> 70 minutes</br>
-              • Isha Foundation Chikkaballapura:</br> <span class="ml-2">25 minutes</span></br>
-              • Super Speciality Hospital at Puttaparthi: </br>   <span class="ml-2">20 min (45 KMS)</span>.</br>
+              • Kempegowda International Airport <br class="lg:hidden"/> <span class="cust-mar">Bangalore:</span> 70 minutes</br>
+              • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span></br>
+              • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 min (45 KMS)</span>.</br>
               • Nandi Hills: 45 min</br>
               • Golf Course: 20 min</br>
               • Kia Factory: 25 min</br>
@@ -998,7 +998,7 @@
                 </div>
                 <div class="row pt-2">                        
                     <div class="col-12">
-                      <input type="number" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phoneNumber"
+                      <input type="number" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phoneNumber">
                     </div>
                 </div>
                 <!-- <div class="row pt-2">                        
@@ -1467,6 +1467,10 @@ export default {
 
 
 @media only screen and (min-width: 760px) {
+
+  .cust-mar {
+    margin-left: 0px
+  }
   .enq-btn {
     position: fixed;
     top: 55%;
@@ -1516,6 +1520,10 @@ export default {
 }
 
 @media only screen and (max-width: 760px) {
+
+  .cust-mar {
+    margin-left: 8px
+  }
   .carousel-inner {
     height:50vh;
   }
