@@ -65,10 +65,82 @@
             </a>  
         </BaseButton>
       </div>
+      <b-modal id="modal-1" title="" class="modal-title" :hide-footer="true">
+      <div class="container px-0">
+        <div class="row-auto" id="contact">
+          <h2 class="heading font-[Cenzil] text-center text-dark">ENQUIRE NOW </h2>          
+      </div>
+        <div class="row-auto">
+        <div class="w-full">
+          <div class="row-auto pt-2 mx-auto d-block ps-3">
+              <form @submit.prevent="sendEmail"  ref="form" method="post">
+                <div class="row pt-2" id="footer-note"></div>
+                <div class="row pt-2">
+                    <div class="col">
+                      <input type="text" class="form-control border-bottom border-t border-start-0 border-end-0 rounded-0" placeholder="Name" aria-label="Name" name="name">
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-12">
+                      <input type="email" class="form-control border-bottom border-t border-start-0 border-end-0 rounded-0" placeholder="Email" aria-label="Email" name="email">
+                    </div>
+                </div>
+                <div class="row pt-2">                        
+                    <div class="col-12">
+                      <input type="number" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phoneNumber">
+                    </div>
+                </div>
+                <!-- <div class="row pt-2">                        
+                    <div class="col-12">
+                      <select name="classification" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                          <option value="">Preferred Classification</option>
+                          <option value="2BHK Farm House Starting at 3.75 Cr onwards">2BHK Farm House Starting at 3.75 Cr onwards*</option>
+                          <option value="3BHK Farm House Starting at 4.0 Cr onwards">3BHK Farm House Starting at 4.0 Cr onwards*</option>
+                      </select>                           
+                    </div>
+                </div> -->
+                <div class="row pt-2">                        
+                    <div class="col-12">
+                      <select name="visit" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                          <option value="">Planning For Site Visit</option>
+                          <option value="This Weekend">This Weekend</option>
+                          <option value="Next Weekend">Next Weekend</option>
+                          <option value="In This Month">In This Month</option>
+                      </select>                                                    
+                    </div>
+                </div>
+                <div class="row pt-2">                        
+                    <div class="col-12">
+                      <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                          <option value="">Best Time To Call</option>
+                          <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
+                          <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>
+                          <option value="6:00 PM Onwards">6:00 PM Onwards</option>
+                      </select>                                                     
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col">
+                      <textarea class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Message" id="floatingTextarea" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-3">
+                    <div  class="col text-center">
+                      <input id="footer-btn" type="submit" placeholder="submit" class="btn text-white bg-dark rounded-0 px-3"/>
+                    </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+
+  </div>
+    </b-modal>
     </div>
   </nav>
 </template>
 <script>
+import emailjs from 'emailjs-com';
 export default {
   name: 'BaseNavbar',
   data() {
@@ -80,6 +152,17 @@ export default {
   methods: {
     dropdownToggler () {
       this.dropdownNavbar = !this.dropdownNavbar
+    },
+    sendEmail() {
+      event.preventDefault();
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
+        .then(() => {
+          alert('Message sent!')
+          // inputFieldReset.value = " ";
+        }, (error) => {
+          alert('Message not sent', error);
+        }); 
+        // this.$refs.form.reset();
     }
   }
 }

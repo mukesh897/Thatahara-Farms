@@ -12,7 +12,7 @@
 
       <div class="offset-md-2 col-md-8">
          <div class="row-auto pb-4 pt-2 mx-auto d-block ps-3">
-            <form @click="sendEmail()" id="footer-form" method="post">
+            <form @submit.prevent="sendEmail" ref="footerForm" method="post">
                <div class="row pt-2" id="footer-note"></div>
                <div class="row pt-2">
                   <div class="col">
@@ -24,7 +24,7 @@
                </div>
                <div class="row pt-2">                        
                   <div class="col-12">
-                     <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phone">
+                     <input type="number" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phoneNumber">
                   </div>
                   <div class="col-4 d-none">
                      <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="OTP" aria-label="otp" name="otp">
@@ -65,7 +65,7 @@
                   </div>
                </div>
                <div class="row pt-3 pb-3">
-                  <div class="col text-center">
+                  <div @click="sendEmail()" class="col text-center">
                      <button id="footer-btn" type="submit" class="btn text-white bg-dark rounded-0 px-3">
                         Submit
                      </button>
@@ -160,36 +160,44 @@
 </template>
 <script>
 import emailjs from 'emailjs-com';
+import { ref } from 'vue';
 export default {
   name: 'BaseFooter',
+  data() {
+    return {
+      name: '',
+      email: '',
+      phoneNumber: '',
+      message: ''
+    };
+  },
   methods: {
     sendEmail() {
-      // Send email logic here
-
       event.preventDefault();
+
       const emailData = {
         name: this.name,
         email: this.email,
         phoneNumber: this.phoneNumber,
         message: this.message,
       };
-      // console.log(this.$refs)
-      // console.log(this.$refs.form);
-      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
+      const foo = ref('footerForm');
+
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.footerForm, 'CAXeNuLKdK4qtQmdn')
         .then(() => {
-          alert('Message sent!')
-          // inputFieldReset.value = " ";
-        }, (error) => {
-          alert('Message not sent', error);
-        }); 
+          alert('Message sent!');
+          // Reset form fields
+          this.name = '';
+          this.email = '';
+          this.phoneNumber = '';
+          this.message = '';
+        })
+        .catch((error) => {
+          alert('Message not sent: ' + error);
+        });
 
-      // You can use an HTTP library like Axios to send the data to the server
-      // Here, we are logging the email data to the console for demonstration purposes
-      console.log(emailData);
-
-      // Reset form fields
-      // this.email = '';
-      // this.message = '';
+      // Log email data for demonstration purposes
+      // this.$refs.form.reset();
     }
   }
 }

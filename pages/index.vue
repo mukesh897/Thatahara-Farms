@@ -391,8 +391,8 @@
             </h2>
             <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                 The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.</br>
-              • Kempegowda International Airport Bangalore: 70 min</br>
-              • Isha Foundation Chikkaballapura: 25 min</br>
+              • Kempegowda International Airport <br/> <span class="ml-2">Bangalore:</span> 70 minutes</br>
+              • Isha Foundation Chikkaballapura:</br> <span class="ml-2">25 minutes</span></br>
               • Super Speciality Hospital at Puttaparthi: </br>   <span class="ml-2">20 min (45 KMS)</span>.</br>
               • Nandi Hills: 45 min</br>
               • Golf Course: 20 min</br>
@@ -984,7 +984,7 @@
         <div class="row-auto">
         <div class="w-full">
           <div class="row-auto pt-2 mx-auto d-block ps-3">
-              <form @click="sendEmail()" id="form" method="post">
+              <form @submit.prevent="sendEmail"  ref="form" method="post">
                 <div class="row pt-2" id="footer-note"></div>
                 <div class="row pt-2">
                     <div class="col">
@@ -998,10 +998,7 @@
                 </div>
                 <div class="row pt-2">                        
                     <div class="col-12">
-                      <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phone">
-                    </div>
-                    <div class="col-4 d-none">
-                      <input type="text" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="OTP" aria-label="otp" name="otp">
+                      <input type="number" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" placeholder="Phone" aria-label="Phone" name="phoneNumber"
                     </div>
                 </div>
                 <!-- <div class="row pt-2">                        
@@ -1039,7 +1036,7 @@
                     </div>
                 </div>
                 <div class="row pt-3 pb-3">
-                    <div class="col text-center">
+                    <div @click="sendEmail()" class="col text-center">
                       <button id="footer-btn" type="submit" class="btn text-white bg-dark rounded-0 px-3">
                           Submit
                       </button>
