@@ -389,11 +389,11 @@
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               Close Proximity To
             </h2>
-            <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              Welcome to the epitome of countryside living! Situated at the epicenter of all the action.</br>
+            <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
+                The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.</br>
               • Kempegowda International Airport Bangalore: 70 min</br>
               • Isha Foundation Chikkaballapura: 25 min</br>
-              • Super Speciality Hospital at Puttaparthi: 20 min (45 KMS)</br>
+              • Super Speciality Hospital at Puttaparthi: </br>   <span class="ml-2">20 min (45 KMS)</span>.</br>
               • Nandi Hills: 45 min</br>
               • Golf Course: 20 min</br>
               • Kia Factory: 25 min</br>
@@ -458,7 +458,7 @@
                 class="mb-4 rounded-t-3xl  mx-auto"
               >
                 <b-card-text class="font-[Raleway]">
-                  Embark on a journey of refined living and natural enchantment at La Terra, where a captivating vision of "Second Living" unfolds. Prepare to be swept away by a magical experience that seamlessly merges world-class architecture and breathtaking landscaping.
+                  At La Terra, luxury is not just a concept; it's a way of life. Each residence exudes sophistication and opulence, boasting spacious interiors adorned with the finest materials and finishes. From the elegantly designed living spaces to the state-of-the-art amenities, every aspect has been thoughtfully curated to provide you with the epitome of comfort and indulgence.
                 </b-card-text>
 
                 
