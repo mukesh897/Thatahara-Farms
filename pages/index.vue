@@ -638,191 +638,54 @@
                 <div class="item item-17"></div>
               </div> -->
               <b-carousel
-                class="bg-white"
-                id="carousel-2"
-                v-model="slide"
-                :interval="4000"
-                controls
-                indicators
-                background="#ababab"
-                img-width="1024"
-                img-height="373"
-                style="text-shadow: 1px 1px 2px #333;"
-                @sliding-start="onSlideStart"
-                @sliding-end="onSlideEnd"
-              >
-            <!-- Text slides with image -->
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex block lg:justify-between">
-                  <img
-                    @click=""
-                    class="d-block img-fluid w-100 lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/2.JPG"
-                    srcset="~/assets/img/new/2.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/5.JPG"
-                    srcset="~/assets/img/new/5.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/4.JPG"
-                    srcset="~/assets/img/new/4.JPG"
-                    alt="image slot"
-                  >
-                </div>
+            class="bg-white lg:w-1/2 mx-auto"
+            id="image-gallery"
+            v-model="activeSlide"
+            :interval="4000"
+            controls
+            indicators
+            background="#ababab"
+            img-width="1024"
+            img-height="480"
+            style="text-shadow: 1px 1px 2px #333;"
+            @sliding-start="onSlideStart"
+            @sliding-end="onSlideEnd">
+                <b-carousel-slide id="image-list" v-for="(image, index) in images" :key="index">
+                  <template #img>
+                  <img id="gall-image" @click="lightboxOpen(image.link, image.caption, index, $event)" :src="image.link" :alt="'image'" class="d-block w-full h-96 object-cover">
+                  </template>
+                </b-carousel-slide>
+              </b-carousel>
               
-              </template>
-           
-            
-          </b-carousel-slide>
+              <!-- <div class="grid grid-cols-3 overflow-x-hidden">
+                  <img class="image" v-for="(image, i) in images" :src="image.link" :key="i" @click="index = i">
+                  <client-only placeholder="Loading...">
+                    <vgs :images="images" :index="index" @close="index = null"/>
+                  </client-only>
+                  
+                </div>    -->
 
-            <!-- Slides with custom text -->
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex lg:justify-between">
-                  <img
-                    class="d-block w-100 img-fluid lg:w-1/3  "
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/1.JPG"
-                    srcset="~/assets/img/new/1.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/3.JPG"
-                    srcset="~/assets/img/new/3.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/6.JPG"
-                    srcset="~/assets/img/new/6.JPG"
-                    alt="image slot"
-                  >
+                <div id="overlay" class="z-50" @click.self="closeOverlay" v-on:keyup="keyBoardShortcuts(e)">
+                  <b-carousel
+            class="bg-white lg:w-1/2 mx-auto"
+            id="image-gallery"
+            v-model="activeSlide"
+            :interval="4000"
+            controls
+            indicators
+            background="#ababab"
+            img-width="1024"
+            img-height="480"
+            style="text-shadow: 1px 1px 2px #333;">
+                <b-carousel-slide id="image-list" v-for="(image, index) in images" :key="index">
+                  <template #img>
+                  <img id="gall-image" @click="lightboxOpen(image.link, image.caption, index, $event)" :src="image.link" :alt="'image'" class="d-block w-full h-96 object-cover">
+                  </template>
+                </b-carousel-slide>
+              </b-carousel>
                 </div>
-              
-              </template>
-           
-            </b-carousel-slide>
 
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex lg:justify-between">
-                  <img
-                    class="d-block w-100 img-fluid lg:w-1/3  "
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/7.JPG"
-                    srcset="~/assets/img/new/7.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/8.JPG"
-                    srcset="~/assets/img/new/8.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/9.JPG"
-                    srcset="~/assets/img/new/9.JPG"
-                    alt="image slot"
-                  >
-                </div>
-              
-              </template>
-           
-            </b-carousel-slide>
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex lg:justify-between">
-                  <img
-                    class="d-block w-100 img-fluid lg:w-1/3  "
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/10.JPG"
-                    srcset="~/assets/img/new/10.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/11.JPG"
-                    srcset="~/assets/img/new/11.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/12.JPG"
-                    srcset="~/assets/img/new/12.JPG"
-                    alt="image slot"
-                  >
-                </div>
-              
-              </template>
-           
-            </b-carousel-slide>
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex lg:justify-between">
-                  <img
-                    class="d-block w-100 img-fluid lg:w-1/3  "
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/13.JPG"
-                    srcset="~/assets/img/new/13.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/14.JPG"
-                    srcset="~/assets/img/new/14.JPG"
-                    alt="image slot"
-                  >
-                  <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/3"
-                    width="1024"
-                    height="373"
-                    src="~/assets/img/new/15.JPG"
-                    srcset="~/assets/img/new/15.JPG"
-                    alt="image slot"
-                  >
-                </div>
-              
-              </template>
-           
-            </b-carousel-slide>
-          </b-carousel>
+
             </div>
           </div>
         </div>
@@ -1067,6 +930,7 @@
 
 <script>
 // import VueImageLightboxCarousel from 'vue-image-lightbox-carousel'
+import { VueGallerySlideshow } from 'vue-gallery-slideshow';
 import VueSlickCarousel from 'vue-slick-carousel'
 import emailjs from 'emailjs-com';
 import Swiper from 'swiper/swiper-bundle.min';
@@ -1081,64 +945,28 @@ export default {
   components: {
       Swiper,
       VueSlickCarousel,
+      VueGallerySlideshow,
     },
    
   data() {
     return {
       active: 1,
+      index: null,
       images: [
-        {
-          path: 'https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg',
-          caption: 'Elephant',
-        },
-        {
-          path: 'https://i-kinhdoanh.vnecdn.net/2018/06/18/1-1529296929_680x0.jpg',
-          caption: 'Messi',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/775162441-MR-2031-8E033EFCEBB928DC12A2A0AA3CEC4C33-21885-1527376486_680x0.jpg',
-          caption: 'Bale and Marcelo',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/Screen-Shot-2018-05-27-at-7-1527379562_680x0.png',
-          caption: 'Madrid crowd',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15E0DG-1527379049_680x0.jpg',
-          caption: 'Zidane',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/Screen-Shot-2018-05-27-at-7-1527379346_680x0.png',
-          caption: 'Bale kissed the cup',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15D9SR-1527378710_680x0.jpg',
-          caption: 'Ronaldo showed off',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15D9PD-1527378584_680x0.jpg',
-          caption: 'Benzema and Varane',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15E01C-1527378364_680x0.jpg',
-          caption: 'Nacho',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15D9DX-1527378233_680x0.jpg',
-          caption: 'Ramos',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15D921-1527377928_680x0.jpg',
-          caption: 'Ceremony',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15D8R8-1527377973_680x0.jpg',
-          caption: 'Champion',
-        },
-        {
-          path: 'https://i-thethao.vnecdn.net/2018/05/27/000-15E0FA-1527377507_680x0.jpg',
-          caption: 'Kiss',
-        },
+            { link: require('~/assets/img/new/1.JPG'), caption: 'Image 1' },
+            { link: require('~/assets/img/new/2.JPG'), caption: 'Image 2' },
+            { link: require('~/assets/img/new/4.JPG'), caption: 'Image 4' },
+            { link: require('~/assets/img/new/5.JPG'), caption: 'Image 5' },
+            { link: require('~/assets/img/new/6.JPG'), caption: 'Image 6' },
+            { link: require('~/assets/img/new/7.JPG'), caption: 'Image 7' },
+            { link: require('~/assets/img/new/8.JPG'), caption: 'Image 8' },
+            { link: require('~/assets/img/new/9.JPG'), caption: 'Image 9' },
+            { link: require('~/assets/img/new/11.JPG'), caption: 'Image 11' },
+            { link: require('~/assets/img/new/12.JPG'), caption: 'Image 12' },
+            { link: require('~/assets/img/new/13.JPG'), caption: 'Image 13' },
+            { link: require('~/assets/img/new/15.JPG'), caption: 'Image 15' },
+            { link: require('~/assets/img/new/16.JPG'), caption: 'Image 16' },
+            { link: require('~/assets/img/new/17.JPG'), caption: 'Image 17' },
       ],
       showLightbox:false,
       transitioning: false,
@@ -1149,6 +977,18 @@ export default {
       message: '',
       phoneNumber: '',
       name: '',
+        showNav: 1,
+        keyBoardNav: 1,
+        showcaption: 1,
+        loop: 1,
+        allowKeyboard: 1,
+        imageIndex: 0,
+        active: 0,
+        lightIndex: 0,
+      activeSlide: 0,
+        carouselInterval: 3000,
+        lightboxShow: false,
+        lightboxImages: [],
       dropdownConcurency: false,
       dropdownCrypto: false,
       currencySelected: {
@@ -1327,8 +1167,71 @@ export default {
         prevEl: '.swiper-button-prev',
       },
     });
+    this.lightboxImages = this.images.map((image) => {
+        return {
+          src: image.link,
+          caption: image.caption,
+        };
+    });
+    window.addEventListener('keyup', (e) => {
+        if (this.allowKeyboard === 1) {
+          if (e.keyCode === 37) {
+            this.cyclePrev();
+          } else if (e.keyCode === 39) {
+            this.cycleNext();
+          } else if (e.keyCode === 27) {
+            document.getElementById('overlay').style.display = 'none';
+            this.allowKeyboard = 0;
+          }
+        }
+      });
   },
   methods: {
+    lightboxOpen(href, caption, index, event) {
+        event.preventDefault();
+        // document.getElementById('overlay_image').src = href;
+        // document.getElementById('overlay_caption').innerHTML = caption;
+        this.allowKeyboard = 1;
+        document.getElementById('overlay').style.display = 'block';
+        // this.lightIndex = index;
+        // this.imageIndex = index;
+        this.activeSlide = index;
+      },
+      closeOverlay() {
+        document.getElementById('overlay').style.display = 'none';
+        this.allowKeyboard = 0;
+      },
+      cycleNext() {
+        if (this.imageIndex < this.images.length) {
+            this.lightIndex ++
+          var nextActiveImage = document.querySelector('.activeSlide')
+            .parentElement.nextSibling.querySelector('img');
+            
+          nextActiveImage.click();
+        } else if (this.loop == 1) {
+          var firstActiveImage = document.getElementById('image-gallery')
+            .getElementById('image-list')
+            .getElementById('gall-image');
+            this.lightIndex ++
+          firstActiveImage.click();
+        }
+      },
+      cyclePrev() {
+        if (this.imageIndex > 0) {
+          var prevActiveImage = document.querySelector('.activeSlide')
+            .parentElement.previousSibling.querySelector('img');
+            this.lightIndex --
+          prevActiveImage.click();
+        } else if (this.loop == 1) {
+          var lastActiveImage = document.getElementById('imageGallery')
+            .querySelectorAll('li');
+          var lastChild = lastActiveImage[lastActiveImage.length - 1].getElementById(
+            'gall-image'
+          );
+          this.lightIndex --
+          lastChild.click();
+        }
+      },
  
     startLoop() {
       setInterval(() => {
@@ -1431,6 +1334,10 @@ export default {
   text-align: justify;
   font-family: Raleway;
 }
+
+.sr-only {
+  visibility: hidden;
+}
 .card-img-top {
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
@@ -1492,6 +1399,15 @@ export default {
     /* height:100vh; */
     background-color: white !important;
   }
+
+  .carousel-indicators li {
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #444 !important;
+}
   .img-fluid {
     max-height:480px !important;
     object-fit: cover !important;
@@ -1624,3 +1540,90 @@ export default {
   }
 }
 </style> -->
+
+<style scoped>
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+#overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.holder {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+div[id="next"],
+div[id="prev"],
+div[id="close"] {
+  color: white;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+div[id="next"]:hover,
+div[id="prev"]:hover,
+div[id="close"]:hover {
+  opacity: 1;
+}
+
+div[id="close"] {
+  right: 10px;
+  top: 0;
+  font-size: 30px;
+  opacity: 0.6;
+  z-index: 1000000;
+  position: absolute;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+div[id="next"],
+div[id="prev"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: 40px;
+}
+
+div[id="next"] {
+  right: 0;
+  text-align: right;
+}
+
+div[id="prev"] {
+  left: 0;
+  text-align: left;
+}
+
+/* Responsive Styling */
+</style>

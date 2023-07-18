@@ -20,7 +20,7 @@ export default {
   css: [
     '@/assets/css/main.css','animate.css/animate.min.css'
   ],
-  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js', '~/plugins/bootstrap.js'],
+  plugins: ['~/plugins/smooth-scroll.js', '~/plugins/mdi.js', '~/plugins/bootstrap.js','~/plugins/jquery.js'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 
