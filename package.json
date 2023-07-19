@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "postcss": "^8.4.17"
   },
   "engines": {

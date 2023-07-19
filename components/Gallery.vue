@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="mt-10 w-full max-h-screen overflow-y-scroll h-screen text-center px-5 lg:px-8 mx-auto">
-      <h1 class="text-8xl text-[#5D794F] font-bold">{{ galleryTitle }}</h1>
+      <h1 class="text-8xl text-[hsl(100,21%,39%)] font-bold">{{ galleryTitle }}</h1>
         <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 w-full">
           <li v-for="(item, index) in images" :key="index">
             <div
@@ -45,6 +45,10 @@
         keyBoardNav: 1,
         showcaption: 1,
         loop: 1,
+        allowKeyboard: 1,
+        imageIndex: 0,
+        active: 0,
+        lightIndex: 0,
         images: [
             { link: require('~/assets/img/new/1.JPG'), caption: 'Image 1' },
             { link: require('~/assets/img/new/2.JPG'), caption: 'Image 2' },
@@ -64,10 +68,6 @@
             { link: require('~/assets/img/new/16.JPG'), caption: 'Image 16' },
             { link: require('~/assets/img/new/17.JPG'), caption: 'Image 17' },
         ],
-        allowKeyboard: 1,
-        imageIndex: 0,
-        active: 0,
-        lightIndex: 0,
       };
     },
     mounted() {

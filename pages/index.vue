@@ -438,7 +438,7 @@
           <div class="w-full">
             <div class="w-full grid grid-cols-2 gap-2.5 lg:h-[495px]  rounded-r-[71px]">
               <img :src="require('~/assets/img/attractions/golf.jpeg')" class="w-full h-full rounded-tl-[71px]" alt="" height="125px" width="112px"/>
-              <img :src="require('~/assets/img/attractions/kiaFactory.png')" class="w-full h-full" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/kia-factory.png')" class="w-full h-full" alt="" height="125px" width="112px"/>
               <img :src="require('~/assets/img/attractions/starbucks.jpeg')"  class="w-full h-full rounded-bl-[71px]" alt="" height="125px" width="112px"/>
               <img :src="require('~/assets/img/attractions/marriot.png')" class="w-full h-full"  alt="" height="125px" width="112px"/>
             </div>
