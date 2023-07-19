@@ -398,7 +398,7 @@
                 The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.<br/>
               • Kempegowda International Airport <br class="lg:hidden"/> <span class="cust-mar">Bangalore:</span> 70 minutes<br/>
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span><br/>
-              • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 min (45 KMS)</span>.<br/>
+              • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 min</span>.<br/>
               • Nandi Hills: 45 minutes<br/>
               • Golf Course: 20 minutes<br/>
               • Kia Factory: 25 minutes<br/>
@@ -425,7 +425,7 @@
             <p class="font-normal lg:ml-12 text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                
               • Shell Petrol Pump: 15 minutes <br>
-              • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span> <br/> <span class="cust-mar">20 minutes</span> <br/>
+              • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span> <br/> <span class="cust-mar">45 minutes</span> <br/>
               • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.<br/>
               • Golf Course: 20 minutes<br/>
               • Starbucks: 15 minutes<br/>
@@ -521,7 +521,7 @@
             </div>
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/street-light.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Street L:ghts</h3>
+               <h3 class="elementor-image-box-title">Street Lights</h3>
             </div>
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/water-connection.svg')" alt="Villa" class=" w-20 h-20 pb-2 mx-auto">
