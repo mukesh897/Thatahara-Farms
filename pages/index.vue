@@ -465,6 +465,7 @@
               >
                 <b-card-text>
                  Immerse yourself in a world of exquisite beauty and natural splendor at La Terra, where the latest concept of "Second Living" comes to life. Step into a magical realm where world-class architecture seamlessly blends with the surrounding landscape, offering a truly enchanting experience.
+                 Indulge in the harmonious embrace of nature at La Terra.
                 </b-card-text>
 
                 
@@ -481,7 +482,7 @@
                 class="mb-4 rounded-b-3xl  mx-auto"
               >
                 <b-card-text>
-                  Escape to a new world of serenity at La Terra, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion.
+                  Escape to a new world of serenity at La Terra, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion.  we invite you to your own slice of serenity
                 </b-card-text>
 
                 
@@ -1383,6 +1384,7 @@ export default {
 }
 
 .card-img-bottom {
+  height:239px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
