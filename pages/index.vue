@@ -398,7 +398,7 @@
                 The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.<br/>
               • Kempegowda International Airport <br class="lg:hidden"/> <span class="cust-mar">Bangalore:</span> 70 minutes<br/>
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span><br/>
-              • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 minutes</span>.<br/>
+              • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 minutes</span><br/>
               • Nandi Hills: 45 minutes<br/>
               • Golf Course: 20 minutes<br/>
               • Kia Factory: 25 minutes<br/>
