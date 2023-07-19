@@ -422,7 +422,7 @@
             <!-- <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               Close Proximity To
             </h2> -->
-            <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
+            <p class="font-normal lg:ml-12 text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                
               • Shell Petrol Pump: 15 minutes <br>
               • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span></br class="lg:hidden"> <span class="cust-mar">20 minutes</span></br>
