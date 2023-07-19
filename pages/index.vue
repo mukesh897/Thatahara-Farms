@@ -381,7 +381,12 @@
       <BaseSection data-aos="fade-down flex items-center px-0">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/new/8.JPG')" class="w-full lg:h-[495px]  rounded-r-[71px]" alt="" height="500px" width="450px"/>
+            <div class="w-full grid gap-2.5 grid-cols-2 lg:h-[495px]  rounded-r-[71px]">
+              <img :src="require('~/assets/img/attractions/ishaFoundation.jpeg')" class="w-full h-full" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/saiTemple.jpeg')" class="w-full h-full rounded-tr-[71px]" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/Nandi-Hills.jpeg')" class="w-full h-full" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/Airport.jpeg')" class="w-full h-full rounded-br-[71px]" alt="" height="125px" width="112px"/>
+            </div>
           </div>
         </div>
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
@@ -394,9 +399,9 @@
               • Kempegowda International Airport <br class="lg:hidden"/> <span class="cust-mar">Bangalore:</span> 70 minutes</br>
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span></br>
               • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 min (45 KMS)</span>.</br>
-              • Nandi Hills: 45 min</br>
-              • Golf Course: 20 min</br>
-              • Kia Factory: 25 min</br>
+              • Nandi Hills: 45 minutes</br>
+              • Golf Course: 20 minutes</br>
+              • Kia Factory: 25 minutes</br>
 
             </p>
           </div>
@@ -407,8 +412,43 @@
             <LandingListItem title="No annual fee" />
           </ul> -->
         </div>
+      </BaseSection>
+    </section>
 
-        <div id="design" class="w-full col-span-12 lg:mt-20 mt-10">
+    <section class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 rounded-2xl overflow-hidden">
+      <BaseSection class="fade-down w-full col-span-12 px-0">
+        <div class="col-span-12 w-full z-10 h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
+          <div class="bg-white rounded-r-[71px] lg:mr-[-100px] px-5 py-12  h-max">
+            <!-- <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
+              Close Proximity To
+            </h2> -->
+            <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
+               
+              • Shell Petrol Pump: 15 minutes <br>
+              • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span> <span class="cust-mar">20 minutes</span></br>
+              • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.</br>
+              • Golf Course: 20 minutes</br>
+              • Starbucks: 15 minutes</br>
+              • Numerous eateries just a walk away
+
+            </p>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-7">
+          <div class="w-full">
+            <div class="w-full grid grid-cols-2 gap-2.5 lg:h-[495px]  rounded-r-[71px]">
+              <img :src="require('~/assets/img/attractions/golf.jpeg')" class="w-full h-full rounded-tl-[71px]" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/kiaFactory.png')" class="w-full h-full" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/starbucks.jpeg')"  class="w-full h-full rounded-bl-[71px]" alt="" height="125px" width="112px"/>
+              <img :src="require('~/assets/img/attractions/marriot.png')" class="w-full h-full"  alt="" height="125px" width="112px"/>
+            </div>
+          </div>
+        </div>
+      </BaseSection>
+    </section>
+
+    <section id="design" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 py-12 rounded-2xl overflow-hidden">
+      <div  class="w-full col-span-12 lg:pt-20 pt-10">
           <h2 class="text-2xl text-center uppercase font-medium font-[Cinzel]">
               Design
           </h2>
@@ -466,7 +506,6 @@
             </div>
           </div>
         </div>
-      </BaseSection>
     </section>
     
     <section  class="py-4  bg-main lr-sec bg-white" id="amenities">
