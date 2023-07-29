@@ -318,7 +318,37 @@
       </div>
     </section> -->
 
-    
+    <section id="profile" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 lg:pt-12 pb-0 rounded-2xl overflow-hidden">
+      <BaseSection data-aos="fade-down flex items-center px-0">
+        <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
+          <div class="bg-white z-10 rounded-r-[71px] lg:mr-[-100px] px-5 py-12 pb-12 h-max">
+            <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
+              COMPANY PROFILE
+            </h2>
+            <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
+              At Hampshire Estates, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by two visionaries, Vikas Sethia and Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, including renowned ventures like Magnifera Farms, and executing prestigious projects for High Net Worth Individuals (HNIs), Vikas Sethia and Sudeer S bring their expertise and creativity to every aspect of our offerings.
+
+            </p>
+            <p class="font-normal mt-1 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
+              Whether you are an avid nature lover, an investor, or someone looking for a peaceful retreat, Hampshire Estates promises to assist you in finding the perfect farm plot that aligns with your aspirations. Join us on this exciting journey, and let's create a harmonious bond between you and nature.
+
+            </p>
+          </div>
+
+          <!-- <ul class="space-y-4 sm:space-y-2">
+            <LandingListItem title="Up to 3% back on purchases" />
+            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
+            <LandingListItem title="No annual fee" />
+          </ul> -->
+        </div>
+        <div class="col-span-12 lg:col-span-7">
+          <div class="w-full">
+            <img :src="require('~/assets/img/new/5.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
+          </div>
+        </div>
+        
+      </BaseSection>
+    </section>
 
     <!-- Credit card section -->
     <section id="about" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 pt-12 lg:pb-5 rounded-2xl overflow-hidden">
@@ -397,6 +427,7 @@
             <p class="font-normal text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                 The heart of rural tranquility! Nestled amidst picturesque landscapes, it offers a serene escape from the bustle of city life.<br/>
               • Kempegowda International Airport <br class="lg:hidden"/> <span class="cust-mar">Bangalore:</span> 70 minutes<br/>
+              • Sri Sathya Sai Airport <br class="lg:hidden"/> <span class="cust-mar">Puttaparthi:</span> 25 minutes<br/>
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span><br/>
               • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 minutes</span><br/>
               • Nandi Hills: 45 minutes<br/>
@@ -526,7 +557,7 @@
             </div>
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/water-connection.svg')" alt="Villa" class=" w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Water Connection</h3>
+               <h3 class="elementor-image-box-title">Underground Water Supply</h3>
             </div>
          </div>
          <div class="row pb-5">
@@ -558,17 +589,31 @@
                <h3 class="elementor-image-box-title">CCTV Security</h3>
             </div>
          </div>
-         <div class="row">
+         <div class="row pb-5">
 
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/electricity-connection.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Electricity Connection</h3>
+               <h3 class="elementor-image-box-title">Underground Power Cables</h3>
             </div>
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/lush-green-ambience.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
                <h3 class="elementor-image-box-title">Lush Green Ambience</h3>
             </div>
+            <div class="col-md-4 col-6 text-center">
+               <img :src="require('~/assets/img/apple.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+               <h3 class="elementor-image-box-title">Fruit Bearing Trees</h3>
+            </div>
          </div>
+         <div class="row">
+            <div class="col-md-4 col-6 text-center">
+              <img :src="require('~/assets/img/gazebo.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+              <h3 class="elementor-image-box-title">Gazebo By Water</h3>
+            </div>
+            <div class="col-md-4 col-6 text-center">
+              <img :src="require('~/assets/img/gate.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+              <h3 class="elementor-image-box-title">Grand Entrance</h3>
+            </div>
+            </div>
           </div>
           <div>
             <div class="block lg:hidden">
@@ -584,11 +629,11 @@
             </div>
             <div class="col-md-3 py-5 col-6 text-center">
                <img :src="require('~/assets/img/water-connection.svg')" alt="Villa" class=" w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Water Connection</h3>
+               <h3 class="elementor-image-box-title">Underground Water Supply</h3>
             </div>
             <div class="col-md-3 py-5 col-6 text-center">
                <img :src="require('~/assets/img/electricity-connection.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Electricity Connection</h3>
+               <h3 class="elementor-image-box-title">Underground Power Cables</h3>
             </div>
          </div>
          <div class="row pb-5">
@@ -623,8 +668,32 @@
                <img :src="require('~/assets/img/cctv.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
                <h3 class="elementor-image-box-title">CCTV Security</h3>
             </div>
+            <div class="col-md-3 col-6 pb-5 text-center">
+               <img :src="require('~/assets/img/apple.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+               <h3 class="elementor-image-box-title">Fruit Bearing Trees</h3>
+            </div>
            
          </div>
+         <div class="row pb-5">
+            <div class="col-md-3 col-6 pb-5 text-center">
+               <img :src="require('~/assets/img/gate.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+               <h3 class="elementor-image-box-title">Grand Entrance</h3>
+            </div>
+            <div class="col-md-3 col-6 pb-5 text-center">
+               <img :src="require('~/assets/img/gazebo.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+               <h3 class="elementor-image-box-title">Gazebo By Water</h3>
+            </div>
+            <div class="col-md-3 col-6 pb-5 text-center">
+               <img :src="require('~/assets/img/apple.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
+               <h3 class="elementor-image-box-title">Fruit Bearing Trees</h3>
+            </div>
+           
+         </div>
+          </div>
+          <div class="py-8">
+            <h2 class="text-2xl text-center capitalize font-medium font-[Cinzel]">
+              Master Plan and Pricing on Request
+            </h2>
           </div>
           </div>
         

@@ -15,6 +15,7 @@
           :class="[open ? 'flex' : 'hidden lg:flex']"
           class="w-full max-w-full bg-trading-tools lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-white"
         >
+          <NavLink class="text-white whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
           <NavLink class="text-white" name="ABOUT" url="#about" />
           <NavLink class="text-white" name="PHILOSOPHY" url="#philosophy" />
           <NavLink class="text-white" name="DESIGN" url="#design" />
@@ -54,7 +55,7 @@
       </div>
       <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3 pb-4 lg:pb-0 bg-trading-tools lg:px-0 px-4 ">
         <BaseButton
-              v-b-modal.modal-1 
+              v-b-modal.modal-2
               class="max-w-full bg-transparent font-bold text-[#c49b36]"
             >
             <a
@@ -65,7 +66,7 @@
             </a>  
         </BaseButton>
       </div>
-      <b-modal id="modal-1" title="" class="modal-title" :hide-footer="true">
+      <b-modal id="modal-2" title="" class="modal-title" :hide-footer="true">
       <div class="container px-0">
         <div class="row-auto" id="contact">
           <h2 class="heading font-[Cenzil] text-center text-dark">ENQUIRE NOW </h2>          
