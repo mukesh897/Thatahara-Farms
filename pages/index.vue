@@ -655,7 +655,7 @@
             </div>
           
          </div>
-         <div class="row pb-5">
+         <div class="row">
             <div class="col-md-3 col-6 pb-5 text-center">
                <img :src="require('~/assets/img/farm-maintainence.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
                <h3 class="elementor-image-box-title">Farm Maintainence</h3>
@@ -674,7 +674,7 @@
             </div>
            
          </div>
-         <div class="row pb-5">
+         <div class="row">
             <div class="col-md-3 col-6 pb-5 text-center">
                <img :src="require('~/assets/img/gate.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
                <h3 class="elementor-image-box-title">Grand Entrance</h3>
@@ -686,10 +686,10 @@
            
          </div>
           </div>
-          <div class="py-8">
-            <h2 class="text-2xl text-center capitalize font-medium font-[Cinzel]">
+          <div class="sm:py-8 flex justify-center">
+            <a v-smooth-scroll href="#contact" class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
               Master Plan and Pricing on Request
-            </h2>
+            </a>
           </div>
           </div>
         
@@ -980,7 +980,7 @@
                 </div> -->
                 <div class="row pt-2">                        
                     <div class="col-12">
-                      <select name="visit" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                      <select class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" name="visitTime">
                           <option value="">Planning For Site Visit</option>
                           <option value="This Weekend">This Weekend</option>
                           <option value="Next Weekend">Next Weekend</option>
@@ -990,7 +990,7 @@
                 </div>
                 <div class="row pt-2">                        
                     <div class="col-12">
-                      <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                      <select class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0" name="callTime">
                           <option value="">Best Time To Call</option>
                           <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
                           <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>

@@ -41,7 +41,7 @@
                </div> -->
                <div class="row pt-2">                        
                   <div class="col-12">
-                     <select name="visit" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                     <select name="visitTime" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
                          <option value="">Planning For Site Visit</option>
                          <option value="This Weekend">This Weekend</option>
                          <option value="Next Weekend">Next Weekend</option>
@@ -51,7 +51,7 @@
                </div>
                <div class="row pt-2">                        
                   <div class="col-12">
-                     <select name="time" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
+                     <select name="callTime" class="form-control border-bottom border-top-0 border-start-0 border-end-0 rounded-0">
                          <option value="">Best Time To Call</option>
                          <option value="9:30 AM To 01:00 PM">9:30 AM To 01:00 PM</option>
                          <option value="01:00 PM To 6:00 PM">01:00 PM To 6:00 PM</option>
