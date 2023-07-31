@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen font-sans antialiased relative bg-[#55D794F]">
+  <div class="min-h-screen font-sans antialiased relative bg-[#55D794F] overflow-auto">
     <div class="relative">
       <div
         class="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh]"

@@ -12,8 +12,9 @@
           </button>
         </div>
         <ul
+          style="margin-left: 0px !important;"
           :class="[open ? 'flex' : 'hidden lg:flex']"
-          class="w-full max-w-full bg-trading-tools lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-white"
+          class="lg:w-full lg:max-w-full w-screen bg-trading-tools lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-white"
         >
           <NavLink class="text-white whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
           <NavLink class="text-white" name="ABOUT" url="#about" />

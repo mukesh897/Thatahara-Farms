@@ -683,10 +683,6 @@
                <img :src="require('~/assets/img/gazebo.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
                <h3 class="elementor-image-box-title">Gazebo By Water</h3>
             </div>
-            <div class="col-md-3 col-6 pb-5 text-center">
-               <img :src="require('~/assets/img/apple.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Fruit Bearing Trees</h3>
-            </div>
            
          </div>
           </div>
@@ -1557,7 +1553,7 @@ export default {
   .enq-btn {
     position: fixed;
     top: 55%;
-    right: -7.5% !important;
+    right: -15.5% !important;
     z-index: 100;
     rotate: 270deg;
     background-color: #c49b36;
