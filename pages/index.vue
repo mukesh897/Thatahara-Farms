@@ -607,7 +607,7 @@
          <div class="row">
             <div class="col-md-4 col-6 text-center">
               <img :src="require('~/assets/img/gazebo.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-              <h3 class="elementor-image-box-title">Gazebo By Water</h3>
+              <h3 class="elementor-image-box-title">Gazebo By The Water</h3>
             </div>
             <div class="col-md-4 col-6 text-center">
               <img :src="require('~/assets/img/gate.png')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
