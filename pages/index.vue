@@ -460,6 +460,7 @@
               • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.<br/>
               • Golf Course: 20 minutes<br/>
               • Starbucks: 15 minutes<br/>
+              • Pharmaceutical SEZ : 25 Minutes <br/>
               • Numerous eateries just a walk away
 
             </p>
