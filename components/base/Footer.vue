@@ -103,7 +103,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details ">
             <h5 class="pb-3 heading font-[Cenzil]">Phone</h5>
-            <p class="font-[Raleway]">+91 6363369715</p>
+            <p class="font-[Raleway]">+91 9632859369</p>
 
          </div>
       </div>

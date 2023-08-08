@@ -240,12 +240,6 @@
 
             </p>
           </div>
-
-          <!-- <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul> -->
         </div>
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
@@ -285,12 +279,6 @@
 
             </p>
           </div>
-
-          <!-- <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul> -->
         </div>
       </BaseSection>
     </section>
@@ -299,9 +287,6 @@
       <BaseSection class="fade-down w-full col-span-12 px-0">
         <div class="col-span-12 w-full z-10 h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
           <div class="bg-white rounded-r-[71px] lg:mr-[-100px] px-5 py-12  h-max">
-            <!-- <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
-              Close Proximity To
-            </h2> -->
             <p class="font-normal lg:ml-12 text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                
               • Shell Petrol Pump: 15 minutes <br>
