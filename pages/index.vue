@@ -187,7 +187,7 @@
               COMPANY PROFILE
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              At Peace Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, including renowned ventures like Magnifera Farms, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
+              At Peace Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
 
             </p>
             <p class="font-normal mt-1 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
