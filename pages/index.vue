@@ -163,7 +163,7 @@
           <div class="flex justify-between custom-pad py-4">
               <div>
                 <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] uppercase">Limited Edition</h1>
-                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase"> LA TERRA FARMS</p>
+                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase"> Peace FARMS</p>
               </div>
               <div class="hidden lg:block">
                 <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase">A green living Project</p>
@@ -187,11 +187,11 @@
               COMPANY PROFILE
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              At Hampshire Estates, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by two visionaries, Vikas Sethia and Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, including renowned ventures like Magnifera Farms, and executing prestigious projects for High Net Worth Individuals (HNIs), Vikas Sethia and Sudeer S bring their expertise and creativity to every aspect of our offerings.
+              At Peace Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, including renowned ventures like Magnifera Farms, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
 
             </p>
             <p class="font-normal mt-1 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              Whether you are an avid nature lover, an investor, or someone looking for a peaceful retreat, Hampshire Estates promises to assist you in finding the perfect farm plot that aligns with your aspirations. Join us on this exciting journey, and let's create a harmonious bond between you and nature.
+              Whether you are an avid nature lover, an investor, or someone looking for a peaceful retreat, Peace Farms promises to assist you in finding the perfect farm plot that aligns with your aspirations. Join us on this exciting journey, and let's create a harmonious bond between you and nature.
 
             </p>
           </div>
@@ -216,10 +216,10 @@
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
           <div class="bg-white rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
-              La Terra Farms
+              Peace Farms
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'la terra' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'La terra' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.
+              Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'Peace' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'Peace' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.
               An exclusive community of bountiful farmland adjacent to NH44 highway. Located amidst rolling hills, gushing water stream, where the fragrance of blooming wildflowers dances on the breeze and where the earth sings it's song of abundance.
 
             </p>
@@ -330,8 +330,8 @@
                 class="mb-4 rounded-t-3xl mx-auto"
               >
                 <b-card-text>
-                 Immerse yourself in a world of exquisite beauty and natural splendor at La Terra, where the latest concept of "Second Living" comes to life. Step into a magical realm where world-class architecture seamlessly blends with the surrounding landscape, offering a truly enchanting experience.
-                 Indulge in the harmonious embrace of nature at La Terra.
+                 Immerse yourself in a world of exquisite beauty and natural splendor at Peace, where the latest concept of "Second Living" comes to life. Step into a magical realm where world-class architecture seamlessly blends with the surrounding landscape, offering a truly enchanting experience.
+                 Indulge in the harmonious embrace of nature at Peace.
                 </b-card-text>
 
                 
@@ -348,7 +348,7 @@
                 class="mb-4 rounded-b-3xl  mx-auto"
               >
                 <b-card-text>
-                  Escape to a new world of serenity at La Terra, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion.  we invite you to your own slice of serenity
+                  Escape to a new world of serenity at Peace, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion.  we invite you to your own slice of serenity
                 </b-card-text>
 
                 
@@ -365,7 +365,7 @@
                 class="mb-4 rounded-t-3xl  mx-auto"
               >
                 <b-card-text class="font-[Raleway]">
-                  At La Terra, luxury is not just a concept; it's a way of life. Each residence exudes sophistication and opulence, boasting spacious interiors adorned with the finest materials and finishes. From the elegantly designed living spaces to the state-of-the-art amenities, every aspect has been thoughtfully curated to provide you with the epitome of comfort and indulgence.
+                  At Peace, luxury is not just a concept; it's a way of life. Each residence exudes sophistication and opulence, boasting spacious interiors adorned with the finest materials and finishes. From the elegantly designed living spaces to the state-of-the-art amenities, every aspect has been thoughtfully curated to provide you with the epitome of comfort and indulgence.
                 </b-card-text>
 
                 

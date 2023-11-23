@@ -88,7 +88,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details">
             <h5 class="pb-3 heading font-[Cenzil]">Site ADDRESS</h5>
-            <p class="font-[Raleway]">La Terra Avenue, Off Puttaparthi Rd, Settipalle, 
+            <p class="font-[Raleway]">Peace Avenue, Off Puttaparthi Rd, Settipalle, 
             <br> Andhra Pradesh, 515601</p>
          </div>
       </div>
@@ -148,7 +148,7 @@
       </div>
       <hr>
       <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900">
-        &copy; Copyright 2023 HAMPSHIRE ESTATES LLC. All rights reserved
+        &copy; Copyright 2023 Peace Farms LLC. All rights reserved
       </div>
    </div>
 
