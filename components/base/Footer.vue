@@ -97,7 +97,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details">
             <h5 class="pb-3 heading font-[Cenzil]">EMAIL</h5>
-            <p class="font-[Raleway]"> sales@hampshireestate.com</p>
+            <p class="font-[Raleway]"> sales@peacefarms.in</p>
          </div>
       </div>
       <div class="col-md-3 col-12">
