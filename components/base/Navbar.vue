@@ -157,7 +157,7 @@ export default {
     },
     sendEmail() {
       event.preventDefault();
-      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'FrT6oh5hmdSJSwfOH')
         .then(() => {
           alert('Message sent!')
           // inputFieldReset.value = " ";
