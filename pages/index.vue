@@ -836,7 +836,7 @@ export default {
       };
       // console.log(this.$refs)
       // console.log(this.$refs.form);
-      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
+      emailjs.sendForm('service_5aw7ybl', 'template_j00yyvn', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
         .then(() => {
           alert('Message sent!')
           // inputFieldReset.value = " ";
