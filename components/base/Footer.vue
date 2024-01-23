@@ -88,7 +88,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details">
             <h5 class="pb-3 heading font-[Cenzil]">Site ADDRESS</h5>
-            <p class="font-[Raleway]">Peace Avenue, Off Puttaparthi Rd, Settipalle, 
+            <p class="font-[Raleway]">Peace Farms by Thata Hara Farms, Off Puttaparthi Rd, Settipalle, 
             <br> Andhra Pradesh, 515601</p>
          </div>
       </div>
@@ -103,7 +103,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details ">
             <h5 class="pb-3 heading font-[Cenzil]">Phone</h5>
-            <p class="font-[Raleway]">+91 9632859369</p>
+            <p class="font-[Raleway]">+91 96068 91033/ +91 96328 59369</p>
 
          </div>
       </div>
