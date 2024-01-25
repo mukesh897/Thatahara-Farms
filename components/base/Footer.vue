@@ -81,7 +81,7 @@
       <div class="col-md-3 col-12">
          <div class="f-details">
             <h5 class="pb-3 heading font-[Cenzil]">CORPORATE OFFICE ADDRESS</h5>
-            <p class="font-[Raleway]">Level 10, Concorde Block, UB City, <br>
+            <p class="font-[Raleway]">Thata Hara Farms, <br/> Level 15, Concorde Block, UB City, <br>
             24, Vittal Mallya Rd, Ashok Nagar,<br> Bengaluru,Karnataka 560001</p>
          </div>
       </div>
