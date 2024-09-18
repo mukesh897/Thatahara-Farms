@@ -29,16 +29,16 @@
                     class="d-block img-fluid w-100 lg:w-1/2"
                     width="1024"
                     height="480"
-                    src="~/assets/img/new/7.JPG"
-                    srcset="~/assets/img/new/7.JPG"
+                    src="~/assets/img/IMG_9633.JPG"
+                    srcset="~/assets/img/IMG_9633.JPG"
                     alt="image slot"
                   >
                   <img
                     class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
                     width="1024"
                     height="480"
-                    src="~/assets/img/new/10.JPG"
-                    srcset="~/assets/img/new/10.JPG"
+                    src="~/assets/img/IMG_0536.JPG"
+                    srcset="~/assets/img/IMG_0536.JPG"
                     alt="image slot"
                   >
                 </div>
@@ -49,7 +49,7 @@
           </b-carousel-slide>
 
             <!-- Slides with custom text -->
-            <b-carousel-slide
+            <!-- <b-carousel-slide
             >
             <template #img>
                 <div class="lg:flex lg:justify-between">
@@ -73,7 +73,7 @@
               
               </template>
            
-            </b-carousel-slide>
+            </b-carousel-slide> -->
           </b-carousel>
             </div>
             <div class="lg:hidden">
@@ -170,10 +170,10 @@
               </div>
               <div>
               <div class="bg-black px-2 py-1">
-                <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] text-white uppercase">LUXURY FARMHOUSES</h1>
+                <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] text-white uppercase">LUXURY FARMPLOTS</h1>
               </div>
               <div class="bg-black mt-1 px-2 py-1">
-                <h1 style="" class="font-bold lg:text-2xl font-[Cinzel] uppercase text-white"> ₹ 35 LAC ONWARDS </h1>
+                <h1 style="" class="font-bold lg:text-2xl font-[Cinzel] uppercase text-white"> ₹ 25 LAC ONWARDS </h1>
               </div>
               </div>
              
@@ -198,7 +198,7 @@
         </div>
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/new/5.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/IMG_0535.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
           </div>
         </div>
         
@@ -236,7 +236,13 @@
               WHAT WE OFFER
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              We are absolutely thrilled to offer you the option of building a farm house on the plot. If you desire a tranquil countryside retreat, our skilled team is ready to create a custom-designed farm house that harmonizes with the natural surroundings. From spacious interiors to functional barns and expansive outdoor spaces, we'll work closely with you to bring your ideal farm house to fruition. Your vision, combined with our expertise, will result in a picturesque farm house where you can enjoy the serenity of rural living.
+              •	Drip irrigation <br>
+              •	Eco-Friendly farming <br>
+              •	With Plantation <br>
+              •	Farm management <br> 
+              •	Compound wall for each individual property <br>
+              •	Construction Assistance <br>
+              •	EMI available 40% Down payment 60% EMI @ 6% of interest. <br>
 
             </p>
           </div>
@@ -274,7 +280,7 @@
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span><br/>
               • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 minutes</span><br/>
               • Nandi Hills: 45 minutes<br/>
-              • Golf Course: 20 minutes<br/>
+              • Big Day: 20 minutes<br/>
               • Kia Factory: 25 minutes<br/>
 
             </p>
@@ -521,10 +527,17 @@
            
          </div>
           </div>
-          <div class="sm:py-8 flex justify-center">
-            <a v-smooth-scroll href="#contact" class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
+          <div class="sm:py-8 justify-center mt-10">
+            <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
               Master Plan and Pricing on Request
-            </a>
+            </p>
+            <img :src="require('~/assets/img/Map.jpg')" alt="Villa" class="w-full h-3/4 pb-2 mx-auto">
+          </div>
+          <div class="sm:py-8 justify-center mt-10">
+            <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
+              Site Location
+            </p>
+            <img :src="require('~/assets/img/qr.png')" alt="Villa" class="w-50 h-50 h-20 pb-2 mx-auto">
           </div>
           </div>
       </div>
@@ -1045,7 +1058,7 @@ export default {
 }
 
 .bg-trading-tools {
-  background-color: #f7fbff;
+  background-color: #d4e8ce;
   background-size: cover;
   background-position: center;
 }

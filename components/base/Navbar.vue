@@ -1,10 +1,10 @@
 <template>
-  <nav id="navbar" class="relative z-10 w-full text-neutral-800 max-h-[86px] bg-trading-tools">
+  <nav id="navbar" class="relative z-10 w-full max-h-[86px]">
     <div class="flex theme flex-col max-w-screen-xl mx-auto lg:items-center lg:justify-between lg:flex-row py-4">
       <div class="flex flex-col lg:flex-row items-center space-x-4 xl:space-x-2">
         <div class="w-full px-4 flex flex-row items-center justify-between">
           <div class="pb-4">
-            <img :src="require('~/assets/img/IMG_9667.png')" :srcset="require('~/assets/img/IMG_9667.png')" class="w-10 h-10 xl:w-28 object-cover" alt="HE Logo" />
+            <img :src="require('~/assets/img/FARMS.jpg')" :srcset="require('~/assets/img/FARMS.jpg')" class="w-10 h-10 xl:w-28 object-cover" alt="HE Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <SegmentIcon v-if="!open" :size="24" />
@@ -14,14 +14,14 @@
         <ul
           style="margin-left: 0px !important;"
           :class="[open ? 'flex' : 'hidden lg:flex']"
-          class="lg:w-full lg:max-w-full w-screen bg-trading-tools lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-white"
+          class="lg:w-full lg:max-w-full w-screen lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-[#4b8539]"
         >
-          <NavLink class="text-white whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
-          <NavLink class="text-white" name="ABOUT" url="#about" />
-          <NavLink class="text-white" name="PHILOSOPHY" url="#philosophy" />
-          <NavLink class="text-white" name="DESIGN" url="#design" />
-          <NavLink class="text-white" name="AMENITIES" url="#amenities" />
-          <NavLink class="text-white" name="CONTACT" url="#footer" />
+          <NavLink class="text-[#4b8539] whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
+          <NavLink class="!text-[#4b8539]" name="ABOUT" url="#about" />
+          <NavLink class="!text-[#4b8539]" name="PHILOSOPHY" url="#philosophy" />
+          <NavLink class="!text-[#4b8539]" name="DESIGN" url="#design" />
+          <NavLink class="!text-[#4b8539]" name="AMENITIES" url="#amenities" />
+          <NavLink class="!text-[#4b8539]" name="CONTACT" url="#footer" />
           <!-- <li class="relative group">
             <button
               class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
@@ -54,7 +54,7 @@
           </li> -->
         </ul>
       </div>
-      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3 pb-4 lg:pb-0 bg-trading-tools lg:px-0 px-4 ">
+      <div :class="[open ? 'flex' : 'hidden lg:flex']" class="space-x-3 pb-4 lg:pb-0 lg:px-0 px-4 ">
         <BaseButton
               v-b-modal.modal-2
               class="max-w-full bg-transparent font-bold text-[#c49b36]"
@@ -171,6 +171,9 @@ export default {
 </script>
 
 <style scoped>
+  a {
+    color:#4b8539 !important;
+  }
   .theme {
     color: #68A678;
   }
