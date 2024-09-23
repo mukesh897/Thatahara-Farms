@@ -7,7 +7,7 @@
         <div class="relative max-w-full shadow col-span-12 overflow-hidden">
             <div class="hidden lg:block">
               <b-carousel
-            class="bg-white"
+            class="bg-[#bbdbb3]"
             id="carousel-1"
             v-model="slide"
             :interval="4000"
@@ -34,7 +34,7 @@
                     alt="image slot"
                   >
                   <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
                     width="1024"
                     height="480"
                     src="~/assets/img/IMG_0536.JPG"
@@ -62,7 +62,7 @@
                     alt="image slot"
                   >
                   <img
-                    class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                    class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
                     width="1024"
                     height="480"
                     src="~/assets/img/new/14.JPG"
@@ -78,7 +78,7 @@
             </div>
             <div class="lg:hidden">
               <b-carousel
-            class="bg-white"
+            class="bg-[#bbdbb3]"
             id="carousel-1"
             v-model="slide"
             :interval="4000"
@@ -135,7 +135,7 @@
             >
             <template #img>
               <img
-                class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
                 width="1024"
                 height="480"
                 src="~/assets/img/new/14.JPG"
@@ -149,7 +149,7 @@
             >
             <template #img>
               <img
-                class="d-block img-fluid w-100 lg:pl-4 bg-white lg:w-1/2"
+                class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
                 width="1024"
                 height="480"
                 src="~/assets/img/new/13.JPG"
@@ -162,17 +162,17 @@
             </div>
           <div class="flex justify-between custom-pad py-4">
               <div>
-                <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] uppercase">Limited Edition</h1>
-                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase"> Peace FARMS</p>
+                <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] uppercase theme-text">Limited Edition</h1>
+                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase theme-text"> Peace FARMS</p>
               </div>
               <div class="hidden lg:block">
-                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase">A green living Project</p>
+                <p class="mt-1 font-bold lg:text-2xl font-[Cinzel] uppercase theme-text">A green living Project</p>
               </div>
               <div>
-              <div class="bg-black px-2 py-1">
+              <div class="bg-[#006400] px-2 py-1">
                 <h1 style="" class="font-medium lg:text-2xl font-[Cinzel] text-white uppercase">LUXURY FARMPLOTS</h1>
               </div>
-              <div class="bg-black mt-1 px-2 py-1">
+              <div class="bg-[#006400] mt-1 px-2 py-1">
                 <h1 style="" class="font-bold lg:text-2xl font-[Cinzel] uppercase text-white"> ₹ 25 LAC ONWARDS </h1>
               </div>
               </div>
@@ -182,7 +182,7 @@
     <section id="profile" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 lg:py-12 lg:pt-12 pb-0 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down flex items-center px-0">
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white z-10 rounded-r-[71px] lg:mr-[-100px] px-5 py-12 pb-12 h-max">
+          <div class="bg-[#bbdbb3] z-10 rounded-r-[71px] lg:mr-[-100px] px-5 py-12 pb-12 h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               COMPANY PROFILE
             </h2>
@@ -214,7 +214,7 @@
           </div>
         </div>
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
+          <div class="bg-[#bbdbb3] rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               Peace Farms
             </h2>
@@ -231,7 +231,7 @@
     <section class="px-0 mx-0 relative max-w-full sm:mx-4 lg:mt-10 lg:py-12 lg:pt-12 pb-0 rounded-2xl overflow-hidden">
       <BaseSection data-aos="fade-down flex items-center px-0">
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white z-10 rounded-r-[71px] lg:mr-[-100px] px-5 lg:py-12 pb-12 pt-0  h-max">
+          <div class="bg-[#bbdbb3] z-10 rounded-r-[71px] lg:mr-[-100px] px-5 lg:py-12 pb-12 pt-0  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               WHAT WE OFFER
             </h2>
@@ -269,7 +269,7 @@
           </div>
         </div>
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
+          <div class="bg-[#bbdbb3] rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               Close Proximity To
             </h2>
@@ -280,7 +280,7 @@
               • Isha Foundation Chikkaballapura:<br class="lg:hidden"/> <span class="cust-mar">25 minutes</span><br/>
               • Super Speciality Hospital at Puttaparthi: <br class="lg:hidden"/>   <span class="cust-mar">20 minutes</span><br/>
               • Nandi Hills: 45 minutes<br/>
-              • Big Day: 20 minutes<br/>
+              • Big Bay: 20 minutes<br/>
               • Kia Factory: 25 minutes<br/>
 
             </p>
@@ -292,13 +292,12 @@
     <section class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 rounded-2xl overflow-hidden">
       <BaseSection class="fade-down w-full col-span-12 px-0">
         <div class="col-span-12 w-full z-10 h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
-          <div class="bg-white rounded-r-[71px] lg:mr-[-100px] px-5 py-12  h-max">
+          <div class="bg-[#bbdbb3] rounded-r-[71px] lg:mr-[-100px] px-5 py-12  h-max">
             <p class="font-normal lg:ml-12 text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                
               • Shell Petrol Pump: 15 minutes <br>
               • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span> <br/> <span class="ml-2">45 minutes</span> <br/>
               • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.<br/>
-              • Golf Course: 20 minutes<br/>
               • Starbucks: 15 minutes<br/>
               • Pharmaceutical SEZ : 25 Minutes <br/>
               • Numerous eateries just a walk away
@@ -381,7 +380,7 @@
         </div>
     </section>
     
-    <section  class="py-4  bg-main lr-sec bg-white" id="amenities">
+    <section  class="py-4  bg-main lr-sec bg-[#bbdbb3]" id="amenities">
       <div class="container px-0">
         <h2 class="text-2xl text-center uppercase font-medium font-[Cinzel]">
               Amenities
@@ -531,20 +530,20 @@
             <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
               Master Plan and Pricing on Request
             </p>
-            <img :src="require('~/assets/img/Map.jpg')" alt="Villa" class="w-full h-3/4 pb-2 mx-auto">
+            <img :src="require('~/assets/img/Map.png')" alt="Villa" class="w-full h-3/4 pb-2 mx-auto">
           </div>
           <div class="sm:py-8 justify-center mt-10">
             <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
               Site Location
             </p>
-            <img :src="require('~/assets/img/qr.png')" alt="Villa" class="w-50 h-50 h-20 pb-2 mx-auto">
+            <img :src="require('~/assets/img/Qrcode.png')" alt="Villa" height="100" width="100" class="w-25 h-25 h-20 pb-2 mx-auto">
           </div>
           </div>
       </div>
       
    </section>
 
-   <section  class="py-4  bg-main lr-sec bg-white" id="gallery">
+   <section  class="py-4  bg-main lr-sec bg-[#bbdbb3]" id="gallery">
    <div class="w-full col-span-12 lg:mt-20 mt-10">
           <h2 class="text-2xl text-center uppercase font-medium font-[Cinzel]">
               Gallery
@@ -552,7 +551,7 @@
           <div class="w-full mt-10 block lg:flex justify-evenly">
             <div class="container">
               <b-carousel
-                class="bg-white lg:w-1/2 mx-auto"
+                class="bg-[#bbdbb3] lg:w-1/2 mx-auto"
                 id="image-gallery"
                 v-model="activeSlide"
                 :interval="4000"
@@ -572,7 +571,7 @@
               </b-carousel>
                 <div id="overlay" class="z-50" @click.self="closeOverlay" v-on:keyup="keyBoardShortcuts(e)">
                   <b-carousel
-                    class="bg-white lg:w-1/2 mx-auto"
+                    class="bg-[#bbdbb3] lg:w-1/2 mx-auto"
                     id="image-gallery"
                     v-model="activeSlide"
                     :interval="4000"
@@ -694,20 +693,22 @@ export default {
       active: 1,
       index: null,
       images: [
-            { link: require('~/assets/img/new/1.JPG'), caption: 'Image 1' },
-            { link: require('~/assets/img/new/2.JPG'), caption: 'Image 2' },
-            { link: require('~/assets/img/new/4.JPG'), caption: 'Image 4' },
-            { link: require('~/assets/img/new/5.JPG'), caption: 'Image 5' },
-            { link: require('~/assets/img/new/6.JPG'), caption: 'Image 6' },
-            { link: require('~/assets/img/new/7.JPG'), caption: 'Image 7' },
-            { link: require('~/assets/img/new/8.JPG'), caption: 'Image 8' },
-            { link: require('~/assets/img/new/9.JPG'), caption: 'Image 9' },
-            { link: require('~/assets/img/new/11.JPG'), caption: 'Image 11' },
-            { link: require('~/assets/img/new/12.JPG'), caption: 'Image 12' },
-            { link: require('~/assets/img/new/13.JPG'), caption: 'Image 13' },
-            { link: require('~/assets/img/new/15.JPG'), caption: 'Image 15' },
-            { link: require('~/assets/img/new/16.JPG'), caption: 'Image 16' },
-            { link: require('~/assets/img/new/17.JPG'), caption: 'Image 17' },
+            { link: require('~/assets/img/IMG_0234.JPG'), caption: 'Image 1' },
+            { link: require('~/assets/img/IMG_0269.JPG'), caption: 'Image 2' },
+            { link: require('~/assets/img/IMG_0343.JPG'), caption: 'Image 4' },
+            { link: require('~/assets/img/IMG_0532.JPG'), caption: 'Image 5' },
+            { link: require('~/assets/img/IMG_0533.JPG'), caption: 'Image 6' },
+            { link: require('~/assets/img/IMG_0534.JPG'), caption: 'Image 7' },
+            { link: require('~/assets/img/IMG_0535.JPG'), caption: 'Image 8' },
+            { link: require('~/assets/img/IMG_0536.JPG'), caption: 'Image 9' },
+            { link: require('~/assets/img/IMG_0537.JPG'), caption: 'Image 11' },
+            { link: require('~/assets/img/IMG_0538.JPG'), caption: 'Image 12' },
+            { link: require('~/assets/img/IMG_0539.JPG'), caption: 'Image 13' },
+            { link: require('~/assets/img/IMG_9411.JPG'), caption: 'Image 15' },
+            { link: require('~/assets/img/IMG_9633.JPG'), caption: 'Image 16' },
+            { link: require('~/assets/img/IMG_9647.JPG'), caption: 'Image 17' },
+            { link: require('~/assets/img/IMG_9666.png'), caption: 'Image 18' },
+            { link: require('~/assets/img/IMG_9667.png'), caption: 'Image 19' },
       ],
       showLightbox:false,
       transitioning: false,
@@ -955,7 +956,7 @@ export default {
     right: -4.5% !important;
     z-index: 100;
     rotate: 270deg;
-    background-color: #c49b36;
+    background-color: #006400;
 }
   .carousel-inner {
     /* height:100vh; */
@@ -1021,7 +1022,7 @@ export default {
     right: -15.5% !important;
     z-index: 100;
     rotate: 270deg;
-    background-color: #c49b36;
+    background-color: #006400;
 }
 
   .custom-pad {
@@ -1148,6 +1149,10 @@ div[id="next"] {
 div[id="prev"] {
   left: 0;
   text-align: left;
+}
+
+.theme-text {
+  color: #006400;
 }
 
 /* Responsive Styling */

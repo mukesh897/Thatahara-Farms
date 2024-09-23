@@ -14,14 +14,14 @@
         <ul
           style="margin-left: 0px !important;"
           :class="[open ? 'flex' : 'hidden lg:flex']"
-          class="lg:w-full lg:max-w-full w-screen lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 text-[#4b8539]"
+          class="lg:w-full lg:max-w-full w-screen lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 !text-[#006400] !font-bold"
         >
-          <NavLink class="text-[#4b8539] whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
-          <NavLink class="!text-[#4b8539]" name="ABOUT" url="#about" />
-          <NavLink class="!text-[#4b8539]" name="PHILOSOPHY" url="#philosophy" />
-          <NavLink class="!text-[#4b8539]" name="DESIGN" url="#design" />
-          <NavLink class="!text-[#4b8539]" name="AMENITIES" url="#amenities" />
-          <NavLink class="!text-[#4b8539]" name="CONTACT" url="#footer" />
+          <NavLink class="navlink-text whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
+          <NavLink class="navlink-text" name="ABOUT" url="#about" />
+          <NavLink class="navlink-text" name="PHILOSOPHY" url="#philosophy" />
+          <NavLink class="navlink-text" name="DESIGN" url="#design" />
+          <NavLink class="navlink-text" name="AMENITIES" url="#amenities" />
+          <NavLink class="navlink-text" name="CONTACT" url="#footer" />
           <!-- <li class="relative group">
             <button
               class="md:px-4 py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline flex items-center"
@@ -35,7 +35,7 @@
             <transition name="transform-fade-down">
               <ul
                 v-if="dropdownNavbar"
-                class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-white rounded-md lg:shadow-md pl-2 lg:pl-0"
+                class="flex lg:absolute flex-col max-w-42 py-1 lg:bg-[#bbdbb3] rounded-md lg:shadow-md pl-2 lg:pl-0"
               >
                 <li>
                   <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Land Search</a>
@@ -172,10 +172,15 @@ export default {
 
 <style scoped>
   a {
-    color:#4b8539 !important;
+    color: #006400 !important;
+    font-weight: 800;
+  }
+  .navlink-text {
+    color: #006400;
+    font-weight: 500;
   }
   .theme {
-    color: #68A678;
+    color: #bbdbb3;
   }
   .bg-trading-tools {
   background-color: black;

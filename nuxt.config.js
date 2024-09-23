@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Peace Farms',
+    title: 'Thatahara Farms',
     htmlAttrs: {
       lang: 'en'
     },
