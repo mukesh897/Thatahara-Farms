@@ -242,7 +242,7 @@
               •	Farm management <br> 
               •	Compound wall for each individual property <br>
               •	Construction Assistance <br>
-              •	EMI available 40% Down payment 60% EMI @ 6% of interest. <br>
+              •	EMI available <br>
 
             </p>
           </div>
@@ -300,7 +300,6 @@
               • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.<br/>
               • Starbucks: 15 minutes<br/>
               • Pharmaceutical SEZ : 25 Minutes <br/>
-              • Numerous eateries just a walk away
 
             </p>
           </div>
@@ -533,6 +532,9 @@
             <img :src="require('~/assets/img/Map.png')" alt="Villa" class="w-full h-3/4 pb-2 mx-auto">
           </div>
           <div class="sm:py-8 justify-center mt-10">
+            <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
+              Project 1: PEACE FARMS
+            </p>
             <p class="text-2xl underline cursor-pointer text-center capitalize font-medium font-[Cinzel]">
               Site Location
             </p>
