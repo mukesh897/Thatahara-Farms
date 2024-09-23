@@ -240,7 +240,7 @@
               •	Eco-Friendly farming <br>
               •	With Plantation <br>
               •	Farm management <br> 
-              •	Compound wall for each individual property <br>
+              • Compound for each individual property<br>
               •	Construction Assistance <br>
               •	EMI available <br>
 
