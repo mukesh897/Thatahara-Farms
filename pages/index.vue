@@ -216,7 +216,7 @@
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
           <div class="bg-[#bbdbb3] rounded-l-[71px] lg:ml-[-100px] px-5 py-12  h-max">
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
-              Peace Farms
+              ABOUT
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
               Welcome to the epitome of countryside living! Situated at the epicenter of all the action, 'Peace' farm plots are nestled in the heart of a picturisque landscape. We invite you to embark on a journey that celebrates the beauty of nature, the tranquility of open spaces, and the timeless allure of farming. 'Peace' offers an extraordinary opportunity to own a piece of land and embrace a life filled with abundance, growth and fulfillment.
@@ -707,8 +707,6 @@ export default {
             { link: require('~/assets/img/IMG_9411.JPG'), caption: 'Image 15' },
             { link: require('~/assets/img/IMG_9633.JPG'), caption: 'Image 16' },
             { link: require('~/assets/img/IMG_9647.JPG'), caption: 'Image 17' },
-            { link: require('~/assets/img/IMG_9666.png'), caption: 'Image 18' },
-            { link: require('~/assets/img/IMG_9667.png'), caption: 'Image 19' },
       ],
       showLightbox:false,
       transitioning: false,
