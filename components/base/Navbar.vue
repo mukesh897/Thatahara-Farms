@@ -7,14 +7,14 @@
             <img :src="require('~/assets/img/FARMS.jpg')" :srcset="require('~/assets/img/FARMS.jpg')" class="w-10 h-10 xl:w-28 object-cover" alt="HE Logo" />
           </div>
           <button class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-            <SegmentIcon v-if="!open" :size="24" />
-            <CloseIcon v-else :size="24" />
+            <SegmentIcon class="!text-[#006400]" v-if="!open" :size="24" />
+            <CloseIcon class="!text-[#006400]" v-else :size="24" />
           </button>
         </div>
         <ul
           style="margin-left: 0px !important;"
           :class="[open ? 'flex' : 'hidden lg:flex']"
-          class="lg:w-full lg:max-w-full w-screen lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 !text-[#006400] !font-bold"
+          class="bg-[#bbdbb3] lg:w-full lg:max-w-full w-screen lg:px-0 lg:pt-0 px-4 mt-0 ml-0 h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 z-20 space-y-3 lg:space-y-0 !text-[#006400] !font-bold"
         >
           <NavLink class="navlink-text whitespace-nowrap" name="COMPANY PROFILE" url="#profile" />
           <NavLink class="navlink-text" name="ABOUT" url="#about" />
@@ -157,7 +157,7 @@ export default {
     },
     sendEmail() {
       event.preventDefault();
-      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'FrT6oh5hmdSJSwfOH')
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
         .then(() => {
           alert('Message sent!')
           // inputFieldReset.value = " ";

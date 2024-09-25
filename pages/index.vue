@@ -75,89 +75,89 @@
            
             </b-carousel-slide> -->
           </b-carousel>
+        </div>
+        <div class="lg:hidden">
+          <b-carousel
+        class="bg-[#bbdbb3]"
+        id="carousel-1"
+        v-model="slide"
+        :interval="4000"
+        controls
+        indicators
+        background="#ababab"
+        img-width="1024"
+        img-height="480"
+        style="text-shadow: 1px 1px 2px #333;"
+        @sliding-start="onSlideStart"
+        @sliding-end="onSlideEnd"
+      >
+        <!-- Text slides with image -->
+        <b-carousel-slide
+        >
+        <template #img>
+            <div class="lg:flex block lg:justify-between">
+              <img
+                class="d-block img-fluid w-100 lg:w-1/2"
+                width="1024"
+                height="480"
+                src="~/assets/img/IMG_9633.JPG"
+                srcset="~/assets/img/IMG_9633.JPG"
+                alt="image slot"
+              >
             </div>
-            <div class="lg:hidden">
-              <b-carousel
-            class="bg-[#bbdbb3]"
-            id="carousel-1"
-            v-model="slide"
-            :interval="4000"
-            controls
-            indicators
-            background="#ababab"
-            img-width="1024"
-            img-height="480"
-            style="text-shadow: 1px 1px 2px #333;"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
+          
+          </template>
+       
+        
+      </b-carousel-slide>
+
+        <!-- Slides with custom text -->
+        <b-carousel-slide
+        >
+        <template #img>
+            <div class="lg:flex lg:justify-between">
+              <img
+                class="d-block img-fluid lg:w-1/2  "
+                width="1024"
+                height="480"
+                src="~/assets/img/IMG_0536.JPG"
+                srcset="~/assets/img/IMG_0536.JPG"
+                alt="image slot"
+              >
+            </div>
+          
+          </template>
+       
+        </b-carousel-slide>
+
+        <!-- Slides with image only -->
+         <!-- <b-carousel-slide
+        >
+        <template #img>
+          <img
+            class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
+            width="1024"
+            height="480"
+            src="~/assets/img/new/14.JPG"
+            srcset="~/assets/img/new/14.JPG"
+            alt="image slot"
           >
-            <!-- Text slides with image -->
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex block lg:justify-between">
-                  <img
-                    class="d-block img-fluid w-100 lg:w-1/2"
-                    width="1024"
-                    height="480"
-                    src="~/assets/img/new/7.JPG"
-                    srcset="~/assets/img/new/7.JPG"
-                    alt="image slot"
-                  >
-                </div>
-              
-              </template>
-           
-            
-          </b-carousel-slide>
+        </template>
+        </b-carousel-slide> -->
 
-            <!-- Slides with custom text -->
-            <b-carousel-slide
-            >
-            <template #img>
-                <div class="lg:flex lg:justify-between">
-                  <img
-                    class="d-block img-fluid lg:w-1/2  "
-                    width="1024"
-                    height="480"
-                    src="~/assets/img/new/10.JPG"
-                    srcset="~/assets/img/new/10.JPG"
-                    alt="image slot"
-                  >
-                </div>
-              
-              </template>
-           
-            </b-carousel-slide>
-
-            <!-- Slides with image only -->
-             <b-carousel-slide
-            >
-            <template #img>
-              <img
-                class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
-                width="1024"
-                height="480"
-                src="~/assets/img/new/14.JPG"
-                srcset="~/assets/img/new/14.JPG"
-                alt="image slot"
-              >
-            </template>
-            </b-carousel-slide>
-
-            <b-carousel-slide
-            >
-            <template #img>
-              <img
-                class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
-                width="1024"
-                height="480"
-                src="~/assets/img/new/13.JPG"
-                srcset="~/assets/img/new/13.JPG"
-                alt="image slot"
-              >
-            </template>
-            </b-carousel-slide>
+        <!-- <b-carousel-slide
+        >
+        <template #img>
+          <img
+            class="d-block img-fluid w-100 lg:pl-4 bg-[#bbdbb3] lg:w-1/2"
+            width="1024"
+            height="480"
+            src="~/assets/img/new/13.JPG"
+            srcset="~/assets/img/new/13.JPG"
+            alt="image slot"
+          >
+        </template>
+        </b-carousel-slide> -->
           </b-carousel>
             </div>
           <div class="flex justify-between custom-pad py-4">
@@ -187,7 +187,7 @@
               COMPANY PROFILE
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              At Peace Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
+              At Thata Hara Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
 
             </p>
             <p class="font-normal mt-1 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
@@ -210,7 +210,7 @@
       <BaseSection data-aos="flex items-center px-0">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/new/1.JPG')" class="w-full lg:h-[495px]  rounded-r-[71px]" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/IMG_9411.JPG')" class="w-full lg:h-[495px]  rounded-r-[71px]" alt="" height="500px" width="450px"/>
           </div>
         </div>
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
@@ -235,14 +235,14 @@
             <h2 class="text-2xl uppercase font-medium font-[Cinzel]">
               WHAT WE OFFER
             </h2>
-            <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
+            <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
               •	Drip irrigation <br>
               •	Eco-Friendly farming <br>
               •	With Plantation <br>
-              •	Farm management <br> 
-              • Compound for each individual property<br>
+              •	Farm management <br>
               •	Construction Assistance <br>
               •	EMI available <br>
+              • Compund for each individual <span class="ml-2"> property</span> 
 
             </p>
           </div>
@@ -703,8 +703,6 @@ export default {
             { link: require('~/assets/img/IMG_0534.JPG'), caption: 'Image 7' },
             { link: require('~/assets/img/IMG_0535.JPG'), caption: 'Image 8' },
             { link: require('~/assets/img/IMG_0536.JPG'), caption: 'Image 9' },
-            { link: require('~/assets/img/IMG_0537.JPG'), caption: 'Image 11' },
-            { link: require('~/assets/img/IMG_0538.JPG'), caption: 'Image 12' },
             { link: require('~/assets/img/IMG_0539.JPG'), caption: 'Image 13' },
             { link: require('~/assets/img/IMG_9411.JPG'), caption: 'Image 15' },
             { link: require('~/assets/img/IMG_9633.JPG'), caption: 'Image 16' },
