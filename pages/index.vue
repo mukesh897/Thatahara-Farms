@@ -318,7 +318,7 @@
 
     <section id="design" class="bg-trading-tools px-0 mx-0 relative max-w-full sm:mx-4 py-12 rounded-2xl overflow-hidden">
       <div  class="w-full col-span-12 lg:pt-20 pt-10">
-          <h2 class="text-2xl text-center uppercase font-medium font-[Cinzel]">
+          <h2 class="text-2xl text-center whitespace-nowrap uppercase font-medium font-[Cinzel]">
               Design
           </h2>
           <div class="w-full mt-10 lg:flex justify-evenly">
@@ -332,7 +332,7 @@
                 style="max-width: 20rem;"
                 class="mb-4 rounded-t-3xl mx-auto"
               >
-                <b-card-text>
+                <b-card-text style="word-break: break-all;" class="text-left antialiased">
                  Immerse yourself in a world of exquisite beauty and natural splendor at Peace, where the latest concept of "Second Living" comes to life. Step into a magical realm where world-class architecture seamlessly blends with the surrounding landscape, offering a truly enchanting experience.
                  Indulge in the harmonious embrace of nature at Peace.
                 </b-card-text>
@@ -350,8 +350,8 @@
                 style="max-width: 20rem;"
                 class="mb-4 rounded-b-3xl  mx-auto"
               >
-                <b-card-text>
-                  Escape to a new world of serenity at Peace, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion.  we invite you to your own slice of serenity
+                <b-card-text style="word-break: break-all;" class="text-left antialiased">
+                  Escape to a new world of serenity at Peace, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion. we invite you to your own slice of serenity
                 </b-card-text>
 
                 
@@ -367,7 +367,7 @@
                 style="max-width: 20rem;"
                 class="mb-4 rounded-t-3xl  mx-auto"
               >
-                <b-card-text class="font-[Raleway]">
+                <b-card-text style="word-break: break-all;" class="font-[Raleway] text-left antialiased">
                   At Peace, luxury is not just a concept; it's a way of life. Each residence exudes sophistication and opulence, boasting spacious interiors adorned with the finest materials and finishes. From the elegantly designed living spaces to the state-of-the-art amenities, every aspect has been thoughtfully curated to provide you with the epitome of comfort and indulgence.
                 </b-card-text>
 
