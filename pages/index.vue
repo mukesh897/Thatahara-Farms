@@ -198,7 +198,7 @@
         </div>
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/IMG_0533.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/IMG_0535.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
           </div>
         </div>
         
@@ -210,7 +210,7 @@
       <BaseSection data-aos="flex items-center px-0">
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/IMG_9411.JPG')" class="w-full lg:h-[495px]  rounded-r-[71px]" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/IMG_0533.JPG')" class="w-full lg:h-[495px]  rounded-r-[71px]" alt="" height="500px" width="450px"/>
           </div>
         </div>
         <div class="col-span-12 w-full h-full flex items-center lg:col-span-5 lg:space-y-6 space-y-3 lg:px-0 sm:px-6">
