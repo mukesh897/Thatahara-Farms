@@ -187,11 +187,11 @@
               COMPANY PROFILE
             </h2>
             <p class="font-normal mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              At Thata Hara Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
+              At Thata Hara Farms, we are a close-knit team of passionate individuals, dedicated to making your dream of owning a farm plot a reality. Our company was founded by Mr Sudeer S, who have an impressive track record in the real estate industry. With a wealth of experience in developing luxury living projects, and executing prestigious projects for High Net Worth Individuals (HNIs), Sudeer S bring his expertise and creativity to every aspect of our offerings.
 
             </p>
             <p class="font-normal mt-1 text-[16px] lg:w-[97%] font-poppins tracking-normal text-justify leading-normal font-[Raleway]">
-              Whether you are an avid nature lover, an investor, or someone looking for a peaceful retreat, Peace Farms promises to assist you in finding the perfect farm plot that aligns with your aspirations. Join us on this exciting journey, and let's create a harmonious bond between you and nature.
+              Whether you are an avid nature lover, an investor, or someone looking for a peaceful retreat, Peace Farms promises to assist you in finding the perfect farmplot that aligns with your aspirations. Join us on this exciting journey, and let's create a harmonious bond between you and nature.
 
             </p>
           </div>
