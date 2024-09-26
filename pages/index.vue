@@ -198,7 +198,7 @@
         </div>
         <div class="col-span-12 lg:col-span-7">
           <div class="w-full">
-            <img :src="require('~/assets/img/IMG_0535.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
+            <img :src="require('~/assets/img/IMG_0533.JPG')" class="w-full lg:h-[495px]  rounded-l-[71px]" alt="" height="500px" width="450px"/>
           </div>
         </div>
         
@@ -242,7 +242,7 @@
               •	Farm management <br>
               •	Construction Assistance <br>
               •	EMI available <br>
-              • Compund for each individual <span class="ml-2"> property</span> 
+              • Compund wall for each individual <span class="ml-2"> property</span> 
 
             </p>
           </div>
@@ -282,7 +282,6 @@
               • Nandi Hills: 45 minutes<br/>
               • Big Bay: 20 minutes<br/>
               • Kia Factory: 25 minutes<br/>
-
             </p>
           </div>
         </div>
@@ -648,7 +647,7 @@
                     </div>
                 </div>
                 <div class="row pt-3 pb-3">
-                    <div @click="sendEmail()" class="col text-center">
+                    <div @click="sendEmail" class="col text-center">
                       <button id="footer-btn" type="submit" class="btn text-white bg-dark rounded-0 px-3">
                           Submit
                       </button>
@@ -839,26 +838,22 @@ export default {
     sendEmail() {
       // Send email logic here
 
-      event.preventDefault();
-      const emailData = {
-        name: this.name,
-        email: this.email,
-        phoneNumber: this.phoneNumber,
-        message: this.message,
-      };
-      // console.log(this.$refs)
-      // console.log(this.$refs.form);
-      emailjs.sendForm('service_5aw7ybl', 'template_j00yyvn', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
+      emailjs.sendForm('service_1o90b3i', 'template_re2toum', this.$refs.form, 'CAXeNuLKdK4qtQmdn')
         .then(() => {
-          alert('Message sent!')
-          // inputFieldReset.value = " ";
-        }, (error) => {
-          alert('Message not sent', error);
-        }); 
+          alert('Message sent!');
+          // Reset form fields
+          this.name = '';
+          this.email = '';
+          this.phoneNumber = '';
+          this.message = '';
+        })
+        .catch((error) => {
+          alert('Message not sent: ' + error);
+        });
 
-      // You can use an HTTP library like Axios to send the data to the server
-      // Here, we are logging the email data to the console for demonstration purposes
-      console.log(emailData);
+      // Log email data for demonstration purposes
+      // this.$refs.form.reset();
+    
 
       // Reset form fields
       // this.email = '';
