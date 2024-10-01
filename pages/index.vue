@@ -295,7 +295,7 @@
             <p class="font-normal lg:ml-12 text-left mt-2 text-[16px] lg:w-[97%] font-poppins tracking-normal leading-normal font-[Raleway]">
                
               • Shell Petrol Pump: 15 minutes <br>
-              • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by Marriott:</span> <br/> <span class="ml-2">45 minutes</span> <br/>
+              • Gushing 5 star Hotels JW Marriott <br class="lg:hidden"/><span class="cust-mar">and Mulberry Shades by <span class="ml-2"> Marriott: 45 minutes </span></span><br/>
               • Close promixity to Railway Junction: <br class="lg:hidden"/>   <span class="cust-mar">Hindpur and Penukonda</span>.<br/>
               • Starbucks: 15 minutes<br/>
               • Pharmaceutical SEZ : 25 Minutes <br/>
