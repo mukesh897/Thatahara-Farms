@@ -325,14 +325,14 @@
             <div>
               <b-card
                 title="FARMHOUSES SURROUNDED BY GREENERY"
-                img-src="~/assets/img/new/10.JPG"
+                img-src="~/assets/img/design.jpeg"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="max-width: 20rem;"
                 class="mb-4 rounded-t-3xl mx-auto"
               >
-                <b-card-text style="word-break: break-all;" class="text-left antialiased">
+                <b-card-text class="tracking-tight antialiased">
                  Immerse yourself in a world of exquisite beauty and natural splendor at Peace, where the latest concept of "Second Living" comes to life. Step into a magical realm where world-class architecture seamlessly blends with the surrounding landscape, offering a truly enchanting experience.
                  Indulge in the harmonious embrace of nature at Peace.
                 </b-card-text>
@@ -343,14 +343,14 @@
             <div>
               <b-card
                 title="WHERE NATURE MEETS PRIVACY"
-                img-src="~/assets/img/new/13.JPG"
+                img-src="~/assets/img/privacy.jpeg"
                 img-alt="Image"
                 img-bottom
                 tag="article"
                 style="max-width: 20rem;"
                 class="mb-4 rounded-b-3xl  mx-auto"
               >
-                <b-card-text style="word-break: break-all;" class="text-left antialiased">
+                <b-card-text class="tracking-tight antialiased">
                   Escape to a new world of serenity at Peace, where the allure of nature and utmost privacy converge. Our private farmhouses offer a tranquil haven dedicated to rest and relaxation. Seamlessly blending with the surrounding natural beauty, each farmhouse is nestled within its own verdant sanctuary, ensuring unparalleled seclusion. we invite you to your own slice of serenity
                 </b-card-text>
 
@@ -360,14 +360,14 @@
             <div>
               <b-card
                 title="A SEAMLESS BLEND OF BEAUTY AND LUXURY"
-                img-src="~/assets/img/new/5.JPG"
+                img-src="~/assets/img/luxury.jpeg"
                 img-alt="Image"
                 img-top
                 tag="article"
                 style="max-width: 20rem;"
                 class="mb-4 rounded-t-3xl  mx-auto"
               >
-                <b-card-text style="word-break: break-all;" class="font-[Raleway] text-left antialiased">
+                <b-card-text class="font-[Raleway] tracking-tight text-left antialiased">
                   At Peace, luxury is not just a concept; it's a way of life. Each residence exudes sophistication and opulence, boasting spacious interiors adorned with the finest materials and finishes. From the elegantly designed living spaces to the state-of-the-art amenities, every aspect has been thoughtfully curated to provide you with the epitome of comfort and indulgence.
                 </b-card-text>
 
@@ -416,7 +416,7 @@
          <div class="row pb-5">
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/farm-maintainence.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
-               <h3 class="elementor-image-box-title">Farm Maintainence</h3>
+               <h3 class="elementor-image-box-title">Farm Maintenence</h3>
             </div>
             <div class="col-md-4 col-6 text-center">
                <img :src="require('~/assets/img/exotic-farmhouse.svg')" alt="Villa" class="w-20 h-20 pb-2 mx-auto">
@@ -864,7 +864,12 @@ export default {
 </script>
 <style scoped>
 
-
+.card-text {
+  text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+}
 .text-header-gradient {
   background: #5D794F;
   background: linear-gradient(169.4deg, #26602d -6.01%, #0cff10 36.87%, #2ff059 78.04%, #0ee86c 103.77%);
@@ -908,7 +913,6 @@ export default {
 }
 
 .card-img-bottom {
-  height:239px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
@@ -1094,8 +1098,6 @@ export default {
   margin: 0 auto;
   position: relative;
 }
-
-
 
 
 div[id="next"],
