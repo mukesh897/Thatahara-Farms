@@ -242,7 +242,7 @@
               •	Farm management <br>
               •	Construction Assistance <br>
               •	EMI available <br>
-              • Compund wall for each individual <span class="ml-2"> property</span> 
+              • Compound wall for each individual <span class="ml-2"> property</span> 
 
             </p>
           </div>
